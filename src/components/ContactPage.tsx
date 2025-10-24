@@ -13,11 +13,38 @@ export function ContactPage() {
     company: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success('Message sent! We\'ll get back to you soon.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setIsSubmitting(true);
+    
+    try {
+      // Replace this URL with your actual Google Form submission URL
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScCxnL-b7omjMU7vOXR5e7ZuTXyVsvqyoZ_m6ybYeeA5qbA5g/formResponse';
+      
+      // Create FormData object with the correct field names from your Google Form
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('entry.770207215', formData.name);
+      formDataToSubmit.append('entry.1370657208', formData.email);
+      formDataToSubmit.append('entry.1417307249', formData.company);
+      formDataToSubmit.append('entry.1026090297', formData.message);
+      
+      // Submit to Google Form
+      await fetch(GOOGLE_FORM_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Forms
+        body: formDataToSubmit,
+      });
+      
+      toast.success('Tin nhắn đã được gửi! Chúng tôi sẽ phản hồi bạn sớm nhất có thể.');
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -121,8 +148,8 @@ export function ContactPage() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
-                  Gửi Tin Nhắn
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? 'Đang gửi...' : 'Gửi Tin Nhắn'}
                   <Send className="ml-2" size={18} />
                 </Button>
               </form>
