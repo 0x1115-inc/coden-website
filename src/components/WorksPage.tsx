@@ -158,7 +158,7 @@ export function WorksPage() {
           <div className="text-center mb-16">
             <h2 className="text-gray-900 mb-4 text-2xl font-bold">Quy trình nghiệp vụ</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Chúng tôi tuân theo một phương pháp đã được chứng minh để đảm bảo bàn giao dự án thành công
+              Chúng tôi tuân theo một phương pháp đã được chứng minh để đảm bảo bàn giao dự án thành công.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export function WorksPage() {
                       {phase.step}
                     </div>
                   </div>
-                  <h3 className="text-gray-900 mb-2">{phase.title}</h3>
+                  <h3 className="text-gray-900 mb-2 text-lg font-semibold">{phase.title}</h3>
                   <p className="text-gray-600">{phase.description}</p>
                 </div>
                 {index < 3 && (

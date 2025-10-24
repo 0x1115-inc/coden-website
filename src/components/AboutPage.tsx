@@ -103,7 +103,7 @@ export function AboutPage() {
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <value.icon className="text-indigo-600" size={28} />
                 </div>
-                <h3 className="text-gray-900 mb-2">{value.title}</h3>
+                <h3 className="text-gray-900 mb-2 text-lg font-semibold">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
