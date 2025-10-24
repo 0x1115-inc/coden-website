@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import logoBlack from '../assets/logo-horizontal-black.png';
 
 interface HeaderProps {
   currentPage: string;
@@ -22,12 +23,18 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div 
-            className="cursor-pointer"
+          <button
+            type="button"
+            className="cursor-pointer flex items-center bg-transparent border-0 p-0"
             onClick={() => onNavigate('home')}
+            aria-label="Go to home"
           >
-            <span className="text-indigo-600">YourStartup</span>
-          </div>
+            <img
+              src={logoBlack}
+              alt="CodeN logo"
+              className="h-8 w-auto object-contain"
+            />
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

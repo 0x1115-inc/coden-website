@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import logoWhite from '../assets/logo-horizontal-white.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -37,7 +38,11 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="text-white mb-4">YourStartup</div>
+            <img
+              src={logoWhite}
+              alt="CodeN logo"
+              className="h-8 w-auto object-contain mb-4"
+            />
             <p className="text-gray-400 mb-4">
               Building innovative solutions for the digital age.
             </p>
@@ -98,8 +103,14 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400">
-            © {currentYear} YourStartup. All rights reserved.
+          <p className="text-gray-400 flex items-center gap-2">
+            © {currentYear}
+            <img
+              src={logoWhite}
+              alt="CodeN logo"
+              className="h-5 w-auto object-contain"
+            />
+            All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">

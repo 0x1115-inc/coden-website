@@ -65,7 +65,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Tại Coden, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
+                Tại CodeN, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
               </motion.p>
 
               
@@ -152,9 +152,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4">Vì sao chọn Coden?</h2>
+            <h2 className="text-gray-900 mb-4">Vì sao chọn CodeN?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Coden không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
+              CodeN không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
             </p>
           </div>
 
