@@ -12,18 +12,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
   const features = [
     {
       icon: Zap,
-      title: 'Fast & Efficient',
-      description: 'Lightning-fast solutions that scale with your business needs.',
-    },
-    {
-      icon: Users,
-      title: 'Team Collaboration',
-      description: 'Built for teams to work together seamlessly and productively.',
+      title: 'Hiệu quả',
+      description: 'Giải pháp tinh gọn, dễ triển khai, tiết kiệm chi phí và đảm bảo hiệu suất cao.',
     },
     {
       icon: Target,
-      title: 'Goal-Oriented',
-      description: 'Focused on delivering results that matter to your business.',
+      title: 'Thấu hiểu',
+      description: 'Lắng nghe và phân tích kỹ lưỡng bối cảnh là nền tảng để đưa ra giải pháp phù hợp nhất.',
+    },
+    {
+      icon: Users,
+      title: 'Đồng hành',
+      description: 'Hỗ trợ lâu dài, chủ động xử lý sự cố, nâng cấp theo nhu cầu, sẵn sàng tư vấn là trách nhiệm của chúng tôi.',
     },
   ];
 
@@ -43,10 +43,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <Badge className="mb-4 bg-indigo-100 text-indigo-700 hover:bg-indigo-100">
-                  <Sparkles className="mr-1" size={14} />
-                  Trusted by 500+ Companies
-                </Badge>
+               
               </motion.div>
               
               <motion.h1 
@@ -55,11 +52,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Transform Your Ideas
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-3xl font-extrabold">
+                  Những ý tưởng táo bạo nhất
                 </span>
                 <br />
-                Into Reality
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">Đều có thể thành hiện thực</span>
               </motion.h1>
               
               <motion.p 
@@ -68,36 +65,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                We're a passionate startup dedicated to building innovative solutions 
-                that empower businesses to thrive in the digital age. Let's create 
-                something amazing together.
+                Tại Coden, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
               </motion.p>
 
-              <motion.div 
-                className="flex flex-wrap gap-6 mb-8"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                    <TrendingUp className="text-green-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-gray-900">98%</div>
-                    <div className="text-sm text-gray-600">Success Rate</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                    <Award className="text-blue-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-gray-900">150+</div>
-                    <div className="text-sm text-gray-600">Projects Done</div>
-                  </div>
-                </div>
-              </motion.div>
+              
               
               <motion.div 
                 className="flex flex-wrap gap-4"
@@ -110,7 +81,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   onClick={() => onNavigate('contact')}
                   className="shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  Get Started
+                  Bắt đầu khám phá
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
                 <Button 
@@ -119,7 +90,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   onClick={() => onNavigate('works')}
                   className="shadow-sm hover:shadow-md transition-shadow"
                 >
-                  View Our Work
+                  Tìm hiểu thêm
                 </Button>
               </motion.div>
             </motion.div>
@@ -169,45 +140,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 />
               </motion.div>
 
-              {/* Floating card */}
-              <motion.div
-                className="absolute bottom-8 -left-4 bg-white rounded-xl shadow-xl p-4 z-20 hidden lg:block"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 0.8 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
-                    <Zap className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-gray-900">Fast Delivery</div>
-                    <div className="text-sm text-gray-600">2x faster than average</div>
-                  </div>
-                </div>
-              </motion.div>
+              
 
-              {/* Stats badge */}
-              <motion.div
-                className="absolute top-8 -right-4 bg-white rounded-xl shadow-xl p-4 z-20 hidden lg:block"
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.2, duration: 0.8 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-center">
-                  <div className="text-3xl text-indigo-600 mb-1">4.9</div>
-                  <div className="text-sm text-gray-600">Client Rating</div>
-                  <div className="flex gap-0.5 mt-1 justify-center">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 fill-yellow-400" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
+             
             </motion.div>
           </div>
         </div>
@@ -217,10 +152,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4">Why Choose Us</h2>
+            <h2 className="text-gray-900 mb-4">Vì sao chọn Coden?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We combine cutting-edge technology with creative thinking to deliver 
-              solutions that drive real business value.
+              Coden không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
             </p>
           </div>
 
