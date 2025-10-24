@@ -24,19 +24,19 @@ export function ContactPage() {
     {
       icon: Mail,
       title: 'Email',
-      detail: 'hello@yourstartup.com',
-      link: 'mailto:hello@yourstartup.com',
+      detail: 'info@coden.org',
+      link: 'mailto:info@coden.org',
     },
     {
       icon: Phone,
       title: 'Phone',
-      detail: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      detail: '+84 93639 7751',
+      link: 'tel:+84936397751',
     },
     {
       icon: MapPin,
       title: 'Office',
-      detail: '123 Innovation Street, San Francisco, CA 94102',
+      detail: 'Tầng 14, Toà nhà Việt Á, số 09 Duy Tân, Cầu Giấy, Hà Nội, Việt Nam.',
       link: '#',
     },
   ];
@@ -46,10 +46,10 @@ export function ContactPage() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-gray-900 mb-6">Get In Touch</h1>
+          <h1 className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-4xl font-extrabold mb-4">Liên hệ với chúng tôi</h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Have a question or want to work together? We'd love to hear from you. 
-            Send us a message and we'll respond as soon as possible.
+            Bạn có câu hỏi hoặc muốn hợp tác? Chúng tôi rất mong nhận được phản hồi từ bạn.
+            Hãy gửi cho chúng tôi một tin nhắn và chúng tôi sẽ phản hồi sớm nhất có thể.
           </p>
         </div>
       </section>
@@ -60,10 +60,10 @@ export function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-gray-900 mb-6 text-lg font-semibold">Gửi cho chúng tôi một tin nhắn</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name">Name *</Label>
+                  <Label htmlFor="name">Họ và Tên *</Label>
                   <Input
                     id="name"
                     type="text"
@@ -72,7 +72,7 @@ export function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    placeholder="Your name"
+                    placeholder="Họ và Tên của bạn"
                     className="mt-1"
                   />
                 </div>
@@ -93,7 +93,7 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="company">Company</Label>
+                  <Label htmlFor="company">Công ty</Label>
                   <Input
                     id="company"
                     type="text"
@@ -101,13 +101,13 @@ export function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, company: e.target.value })
                     }
-                    placeholder="Your company name"
+                    placeholder="Bạn đến từ công ty nào?"
                     className="mt-1"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message">Message *</Label>
+                  <Label htmlFor="message">Tin nhắn *</Label>
                   <Textarea
                     id="message"
                     required
@@ -115,14 +115,14 @@ export function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    placeholder="Tell us about your project..."
+                    placeholder="Hãy cho chúng tôi biết về nhu cầu của bạn..."
                     rows={6}
                     className="mt-1"
                   />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
-                  Send Message
+                  Gửi Tin Nhắn
                   <Send className="ml-2" size={18} />
                 </Button>
               </form>
@@ -130,10 +130,10 @@ export function ContactPage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-gray-900 mb-6">Contact Information</h2>
+              <h2 className="text-gray-900 mb-6 text-lg font-semibold">Thông tin liên hệ</h2>
               <p className="text-gray-600 mb-8">
-                Reach out to us through any of these channels. We're here to help 
-                and answer any questions you might have.
+                Hãy liên hệ với chúng tôi qua bất kỳ kênh nào trong số này. Chúng tôi luôn sẵn sàng giúp đỡ
+                và trả lời bất kỳ câu hỏi nào bạn có thể có.
               </p>
 
               <div className="space-y-6 mb-12">
@@ -158,7 +158,8 @@ export function ContactPage() {
               <div className="rounded-xl overflow-hidden border border-gray-200 h-64 bg-gray-100 flex items-center justify-center">
                 <div className="text-center text-gray-500">
                   <MapPin size={48} className="mx-auto mb-2 opacity-50" />
-                  <p>Map Location</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d950.8663084757393!2d105.78417911971191!3d21.030552365590278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c87a16803%3A0x33777b89208b1827!2zVmnhu4d0IMOBIFRvd2VyLCAwOSBEdXkgVMOibiwgROG7i2NoIFbhu41uZyBI4bqtdSwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2ssg!4v1761330009794!5m2!1sen!2ssg" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  <p>Vị trí bản đồ</p>
                 </div>
               </div>
             </div>
