@@ -6,22 +6,22 @@ export function Footer() {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '#' },
-      { name: 'Careers', href: '#' },
+      { name: 'Giới thiệu', href: '#' },
+      { name: 'Đội ngũ', href: '#' },
       { name: 'Blog', href: '#' },
       { name: 'Press', href: '#' },
     ],
     product: [
-      { name: 'Features', href: '#' },
-      { name: 'Pricing', href: '#' },
-      { name: 'Security', href: '#' },
-      { name: 'Updates', href: '#' },
+      { name: 'Tính năng', href: '#' },
+      { name: 'Giá cả', href: '#' },
+      { name: 'Bảo mật', href: '#' },
+      { name: 'Cập nhật', href: '#' },
     ],
     support: [
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
-      { name: 'Support', href: '#' },
+      { name: 'Tài liệu', href: '#' },
+      { name: 'Hướng dẫn', href: '#' },
+      { name: 'Trạng thái API', href: '#' },
+      { name: 'Hỗ trợ', href: '#' },
     ],
   };
 
@@ -40,11 +40,11 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <img
               src={logoWhite}
-              alt="CodeN logo"
+              alt="Coden logo"
               className="h-8 w-auto object-contain mb-4"
             />
             <p className="text-gray-400 mb-4">
-              Building innovative solutions for the digital age.
+              Tạo giải pháp, dựng cộng đồng.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -62,7 +62,7 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="text-white mb-4">Company</h3>
+            <h3 className="text-white mb-4">Thông tin Công ty</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -75,7 +75,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white mb-4">Product</h3>
+            <h3 className="text-white mb-4">Sản phẩm & Dịch vụ</h3>
             <ul className="space-y-2">
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
@@ -88,7 +88,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white mb-4">Support</h3>
+            <h3 className="text-white mb-4">Tài nguyên</h3>
             <ul className="space-y-2">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
@@ -107,20 +107,20 @@ export function Footer() {
             © {currentYear}
             <img
               src={logoWhite}
-              alt="CodeN logo"
+              alt="Coden logo"
               className="h-5 w-auto object-contain"
             />
             All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
+              Chính sách bảo mật
             </a>
             <a href="#" className="hover:text-white transition-colors">
-              Terms of Service
+              Điều khoản dịch vụ
             </a>
             <a href="#" className="hover:text-white transition-colors">
-              Cookie Policy
+              Chính sách cookie
             </a>
           </div>
         </div>

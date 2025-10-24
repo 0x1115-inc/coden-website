@@ -12,10 +12,10 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', id: 'home' },
-    { name: 'About Us', id: 'about' },
-    { name: 'Works', id: 'works' },
-    { name: 'Contact', id: 'contact' },
+    { name: 'Trang chủ', id: 'home' },
+    { name: 'Giới thiệu', id: 'about' },
+    { name: 'Dịch vụ', id: 'works' },
+    { name: 'Liên hệ', id: 'contact' },
   ];
 
   return (
