@@ -152,7 +152,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4 text-2xl">Vì sao chọn Coden?</h2>
+            <h2 className="text-gray-900 mb-4 text-2xl font-bold">Vì sao chọn Coden?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Coden không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
             </p>
