@@ -13,11 +13,13 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Trang chủ', id: 'home' },
-    { name: 'Giới thiệu', id: 'about' },
-    { name: 'Dịch vụ', id: 'works' },
-    { name: 'Liên hệ', id: 'contact' },
+    { label: 'Trang chủ', id: 'home' },
+    { label: 'Giới thiệu', id: 'about' },
+    { label: 'Dịch vụ', id: 'works' },
+    { label: 'Liên hệ', id: 'contact' },
   ];
+
+  const ctaLabel = 'Liên hệ ngay';
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
@@ -28,11 +30,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             type="button"
             className="cursor-pointer flex items-center bg-transparent border-0 p-0"
             onClick={() => onNavigate('home')}
-            aria-label={ariaGoHome}
+            // aria-label={ariaGoHome}
           >
             <img
               src={logoBlack}
-              alt={logoAlt}
+              // alt={logoAlt}
               className="h-8 w-auto object-contain"
             />
           </button>
