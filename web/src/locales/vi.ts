@@ -1,44 +1,44 @@
-export const en = {
+export const vi = {
   header: {
     ariaGoHome: 'Go to home',
     logoAlt: 'Coden logo',
     navigation: [
-      { id: 'home', label: 'Home' },
-      { id: 'about', label: 'About Us' },
-      { id: 'works', label: 'Works' },
-      { id: 'contact', label: 'Contact' },
+      { id: 'home', label: 'Trang chủ' },
+      { id: 'about', label: 'Vể chúng tôi' },
+      { id: 'works', label: 'Công việc' },
+      { id: 'contact', label: 'Liên hệ' },
     ],
-    ctaLabel: 'Get Started',
+    ctaLabel: 'Kết Nối',
   },
   footer: {
     logoAlt: 'Coden logo',
     description: 'Tạo giải pháp, dựng cộng đồng.',
     columns: {
       company: {
-        title: 'Company',
+        title: 'Công ty',
         links: [
-          { label: 'About Us', href: '#' },
-          { label: 'Careers', href: '#' },
+          { label: 'Về chúng tôi', href: '#' },
+          { label: 'Việc làm', href: '#' },
           { label: 'Blog', href: '#' },
           { label: 'Press', href: '#' },
         ],
       },
       product: {
-        title: 'Product',
+        title: 'Sản phẩm',
         links: [
-          { label: 'Features', href: '#' },
-          { label: 'Pricing', href: '#' },
-          { label: 'Security', href: '#' },
-          { label: 'Updates', href: '#' },
+          { label: 'Tính năng', href: '#' },
+          { label: 'Giá cả', href: '#' },
+          { label: 'Bảo mật', href: '#' },
+          { label: 'Cập nhật', href: '#' },
         ],
       },
       support: {
-        title: 'Support',
+        title: 'Nguồn lực',
         links: [
-          { label: 'Documentation', href: '#' },
-          { label: 'Guides', href: '#' },
-          { label: 'API Status', href: '#' },
-          { label: 'Support', href: '#' },
+          { label: 'Tài liệu', href: '#' },
+          { label: 'Hướng dẫn', href: '#' },
+          { label: 'Trạng thái', href: '#' },
+          { label: 'Hỗ trợ', href: '#' },
         ],
       },
     },
@@ -92,10 +92,10 @@ export const en = {
       ],
     },
     cta: {
-      title: 'Ready to Start Your Project?',
+      title: 'Sẵn sàng kết nối với Coden?',
       description:
-        "Let's discuss how we can help bring your vision to life. Get in touch with us today.",
-      buttonLabel: 'Contact Us Now',
+        "Hãy để chúng tôi giúp bạn số hoá ý tưởng.",
+      buttonLabel: 'Thảo luận nào!',
     },
   },
   about: {
@@ -289,4 +289,4 @@ export const en = {
   },
 } as const;
 
-export type LocaleContent = typeof en;
+export type LocaleContent = typeof vi;

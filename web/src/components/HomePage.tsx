@@ -36,13 +36,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-3xl font-extrabold">
-                  {hero.headline[0]}
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-4xl font-extrabold">
+                  Những ý tưởng táo bạo nhất
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">
-                  {hero.headline[1]}
-                </span>
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">đều có thể thành hiện thực</span>
               </motion.h1>
               
               <motion.p 
@@ -51,7 +49,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                {hero.description}
+                Tại Coden, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
               </motion.p>
 
               
@@ -138,9 +136,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4">{features.title}</h2>
+            <h2 className="text-gray-900 mb-4 text-2xl font-bold">Vì sao chọn Coden?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              {features.description}
+              Coden không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
             </p>
           </div>
 
@@ -167,18 +165,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-white mb-4">
-            {cta.title}
+          <h2 className="text-white mb-4 text-2xl">
+            Sẵn sàng biến ý tưởng của bạn thành hiện thực?
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            {cta.description}
+            Còn chần chờ gì nữa? Hãy liên hệ với chúng tôi ngay hôm nay để bắt đầu hành trình chuyển đổi số và khám phá tiềm năng vô hạn của công nghệ cùng Coden.
           </p>
           <Button 
             size="lg" 
             variant="secondary"
             onClick={() => onNavigate('contact')}
           >
-            {cta.buttonLabel}
+            Liên hệ ngay
           </Button>
         </div>
       </section>

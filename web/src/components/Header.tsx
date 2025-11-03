@@ -12,12 +12,12 @@ interface HeaderProps {
 export function Header({ currentPage, onNavigate }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const {
-    navigation,
-    ctaLabel,
-    ariaGoHome,
-    logoAlt,
-  } = defaultLocale.header;
+  const navigation = [
+    { name: 'Trang chủ', id: 'home' },
+    { name: 'Giới thiệu', id: 'about' },
+    { name: 'Dịch vụ', id: 'works' },
+    { name: 'Liên hệ', id: 'contact' },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">

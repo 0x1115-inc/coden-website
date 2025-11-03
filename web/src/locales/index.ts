@@ -1,8 +1,8 @@
-import { en } from './en';
+import { vi } from './vi';
 
-export type { LocaleContent } from './en';
+export type { LocaleContent } from './vi';
 
-export const defaultLocale = en;
+export const defaultLocale = vi;
 export const availableLocales = {
-  en,
+  vi,
 } as const;
