@@ -1,36 +1,24 @@
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, type LucideIcon } from 'lucide-react';
 import logoWhite from '../assets/logo-horizontal-white.png';
+import { defaultLocale } from '../locales';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
-    company: [
-      { name: 'About Us', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Press', href: '#' },
-    ],
-    product: [
-      { name: 'Features', href: '#' },
-      { name: 'Pricing', href: '#' },
-      { name: 'Security', href: '#' },
-      { name: 'Updates', href: '#' },
-    ],
-    support: [
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
-      { name: 'Support', href: '#' },
-    ],
-  };
+  const {
+    logoAlt,
+    description,
+    columns,
+    social,
+    bottomBar,
+  } = defaultLocale.footer;
 
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
-  ];
+  const socialIconMap: Record<string, LucideIcon> = {
+    Twitter,
+    GitHub: Github,
+    LinkedIn: Linkedin,
+    Email: Mail,
+  };
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -40,34 +28,37 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <img
               src={logoWhite}
-              alt="CodeN logo"
+              alt={logoAlt}
               className="h-8 w-auto object-contain mb-4"
             />
             <p className="text-gray-400 mb-4">
-              Building innovative solutions for the digital age.
+              {description}
             </p>
             <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-colors"
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+              {social.map((socialLink, index) => {
+                const Icon = socialIconMap[socialLink.label] ?? Mail;
+                return (
+                  <a
+                    key={index}
+                    href={socialLink.href}
+                    aria-label={socialLink.label}
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-colors"
+                  >
+                    <Icon size={20} />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="text-white mb-4">Company</h3>
+            <h3 className="text-white mb-4">{columns.company.title}</h3>
             <ul className="space-y-2">
-              {footerLinks.company.map((link, index) => (
+              {columns.company.links.map((link, index) => (
                 <li key={index}>
                   <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -75,12 +66,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white mb-4">Product</h3>
+            <h3 className="text-white mb-4">{columns.product.title}</h3>
             <ul className="space-y-2">
-              {footerLinks.product.map((link, index) => (
+              {columns.product.links.map((link, index) => (
                 <li key={index}>
                   <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -88,12 +79,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white mb-4">Support</h3>
+            <h3 className="text-white mb-4">{columns.support.title}</h3>
             <ul className="space-y-2">
-              {footerLinks.support.map((link, index) => (
+              {columns.support.links.map((link, index) => (
                 <li key={index}>
                   <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -107,21 +98,17 @@ export function Footer() {
             © {currentYear}
             <img
               src={logoWhite}
-              alt="CodeN logo"
+              alt={logoAlt}
               className="h-5 w-auto object-contain"
             />
-            All rights reserved.
+            {bottomBar.rights}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Cookie Policy
-            </a>
+            {bottomBar.policies.map((policy, index) => (
+              <a key={index} href={policy.href} className="hover:text-white transition-colors">
+                {policy.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

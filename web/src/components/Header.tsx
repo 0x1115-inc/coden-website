@@ -2,6 +2,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import logoBlack from '../assets/logo-horizontal-black.png';
+import { defaultLocale } from '../locales';
 
 interface HeaderProps {
   currentPage: string;
@@ -11,12 +12,12 @@ interface HeaderProps {
 export function Header({ currentPage, onNavigate }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navigation = [
-    { name: 'Home', id: 'home' },
-    { name: 'About Us', id: 'about' },
-    { name: 'Works', id: 'works' },
-    { name: 'Contact', id: 'contact' },
-  ];
+  const {
+    navigation,
+    ctaLabel,
+    ariaGoHome,
+    logoAlt,
+  } = defaultLocale.header;
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
@@ -27,11 +28,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             type="button"
             className="cursor-pointer flex items-center bg-transparent border-0 p-0"
             onClick={() => onNavigate('home')}
-            aria-label="Go to home"
+            aria-label={ariaGoHome}
           >
             <img
               src={logoBlack}
-              alt="CodeN logo"
+              alt={logoAlt}
               className="h-8 w-auto object-contain"
             />
           </button>
@@ -48,11 +49,11 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                     : 'text-gray-700 hover:text-indigo-600'
                 }`}
               >
-                {item.name}
+                {item.label}
               </button>
             ))}
             <Button onClick={() => onNavigate('contact')}>
-              Get Started
+              {ctaLabel}
             </Button>
           </div>
 
@@ -82,7 +83,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                       : 'text-gray-700 hover:bg-gray-50'
                   }`}
                 >
-                  {item.name}
+                  {item.label}
                 </button>
               ))}
             </div>

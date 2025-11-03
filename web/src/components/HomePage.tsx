@@ -1,31 +1,16 @@
-import { ArrowRight, Zap, Users, Target, Sparkles, TrendingUp, Award } from 'lucide-react';
+import { ArrowRight, Zap, Users, Target } from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { motion } from 'framer-motion';
-import { Badge } from './ui/badge';
+import { defaultLocale } from '../locales';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
-  const features = [
-    {
-      icon: Zap,
-      title: 'Hiệu quả',
-      description: 'Giải pháp tinh gọn, dễ triển khai, tiết kiệm chi phí và đảm bảo hiệu suất cao.',
-    },
-    {
-      icon: Target,
-      title: 'Thấu hiểu',
-      description: 'Lắng nghe và phân tích kỹ lưỡng bối cảnh là nền tảng để đưa ra giải pháp phù hợp nhất.',
-    },
-    {
-      icon: Users,
-      title: 'Đồng hành',
-      description: 'Hỗ trợ lâu dài, chủ động xử lý sự cố, nâng cấp theo nhu cầu, sẵn sàng tư vấn là trách nhiệm của chúng tôi.',
-    },
-  ];
+  const { hero, features, cta } = defaultLocale.home;
+  const featureIcons = [Zap, Target, Users];
 
   return (
     <div className="min-h-screen">
@@ -45,7 +30,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
               >
                
               </motion.div>
-              
               <motion.h1 
                 className="text-gray-900 mb-6"
                 initial={{ opacity: 0, y: 20 }}
@@ -53,10 +37,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-3xl font-extrabold">
-                  Những ý tưởng táo bạo nhất
+                  {hero.headline[0]}
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">Đều có thể thành hiện thực</span>
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">
+                  {hero.headline[1]}
+                </span>
               </motion.h1>
               
               <motion.p 
@@ -65,7 +51,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Tại CodeN, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
+                {hero.description}
               </motion.p>
 
               
@@ -78,19 +64,19 @@ export function HomePage({ onNavigate }: HomePageProps) {
               >
                 <Button 
                   size="lg" 
-                  onClick={() => onNavigate('contact')}
+                  onClick={() => onNavigate(hero.primaryCta.target)}
                   className="shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  Bắt đầu khám phá
+                  {hero.primaryCta.label}
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => onNavigate('works')}
+                  onClick={() => onNavigate(hero.secondaryCta.target)}
                   className="shadow-sm hover:shadow-md transition-shadow"
                 >
-                  Tìm hiểu thêm
+                  {hero.secondaryCta.label}
                 </Button>
               </motion.div>
             </motion.div>
@@ -135,7 +121,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-purple-600/20 z-10" />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1623715537851-8bc15aa8c145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MTIyNDM2OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Modern workspace"
+                  alt={hero.imageAlt}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -152,25 +138,28 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4">Vì sao chọn CodeN?</h2>
+            <h2 className="text-gray-900 mb-4">{features.title}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              CodeN không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
+              {features.description}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-xl border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all"
-              >
-                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="text-indigo-600" size={24} />
+            {features.items.map((feature, index) => {
+              const Icon = featureIcons[index];
+              return (
+                <div
+                  key={feature.title}
+                  className="p-6 rounded-xl border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all"
+                >
+                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="text-indigo-600" size={24} />
+                  </div>
+                  <h3 className="text-gray-900 mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
                 </div>
-                <h3 className="text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -179,18 +168,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-white mb-4">
-            Ready to Start Your Project?
+            {cta.title}
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help bring your vision to life. 
-            Get in touch with us today.
+            {cta.description}
           </p>
           <Button 
             size="lg" 
             variant="secondary"
             onClick={() => onNavigate('contact')}
           >
-            Contact Us Now
+            {cta.buttonLabel}
           </Button>
         </div>
       </section>
