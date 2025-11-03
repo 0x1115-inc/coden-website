@@ -1,11 +1,10 @@
-import { Mail, Phone, MapPin, Send, type LucideIcon } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { useState, type FormEvent } from 'react';
 import { toast } from 'sonner';
-import { defaultLocale } from '../locales';
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
@@ -106,7 +105,7 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="email">{form.emailLabel}</Label>
+                  <Label htmlFor="email">Email *</Label>
                   <Input
                     id="email"
                     type="email"
@@ -115,7 +114,7 @@ export function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    placeholder={form.emailPlaceholder}
+                    placeholder="your@email.com"
                     className="mt-1"
                   />
                 </div>
@@ -165,24 +164,21 @@ export function ContactPage() {
               </p>
 
               <div className="space-y-6 mb-12">
-                {info.items.map((item, index) => {
-                  const Icon = contactIconMap[item.title] ?? Mail;
-                  return (
-                    <a
-                      key={index}
-                      href={item.link}
-                      className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
-                    >
-                      <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="text-indigo-600" size={24} />
-                      </div>
-                      <div>
-                        <h3 className="text-gray-900 mb-1">{item.title}</h3>
-                        <p className="text-gray-600">{item.detail}</p>
-                      </div>
-                    </a>
-                  );
-                })}
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.link}
+                    className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <info.icon className="text-indigo-600" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-gray-900 mb-1">{info.title}</h3>
+                      <p className="text-gray-600">{info.detail}</p>
+                    </div>
+                  </a>
+                ))}
               </div>
 
               {/* Map placeholder */}
