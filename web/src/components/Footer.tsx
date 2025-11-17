@@ -1,29 +1,12 @@
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
 import logoWhite from '../assets/logo-horizontal-white.png';
+import { useLocale } from '../locales';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const { content } = useLocale();
+  const footer = content.footer;
 
-  const footerLinks = {
-    company: [
-      { name: 'Giới thiệu', href: '#' },
-      { name: 'Đội ngũ', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Press', href: '#' },
-    ],
-    product: [
-      { name: 'Tính năng', href: '#' },
-      { name: 'Giá cả', href: '#' },
-      { name: 'Bảo mật', href: '#' },
-      { name: 'Cập nhật', href: '#' },
-    ],
-    support: [
-      { name: 'Tài liệu', href: '#' },
-      { name: 'Hướng dẫn', href: '#' },
-      { name: 'Trạng thái API', href: '#' },
-      { name: 'Hỗ trợ', href: '#' },
-    ],
-  };
+  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     { icon: Twitter, href: '#', label: 'Twitter' },
@@ -44,7 +27,7 @@ export function Footer() {
               className="h-8 w-auto object-contain mb-4"
             />
             <p className="text-gray-400 mb-4">
-              Tạo giải pháp, dựng cộng đồng.
+              {footer.tagline}
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -61,44 +44,20 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          <div>
-            <h3 className="text-white mb-4">Thông tin Công ty</h3>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white mb-4">Sản phẩm & Dịch vụ</h3>
-            <ul className="space-y-2">
-              {footerLinks.product.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white mb-4">Tài nguyên</h3>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {footer.sections.map((section, index) => (
+            <div key={index}>
+              <h3 className="text-white mb-4">{section.title}</h3>
+              <ul className="space-y-2">
+                {section.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <a href={link.href} className="hover:text-white transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Bar */}
@@ -110,18 +69,14 @@ export function Footer() {
               alt="Coden logo"
               className="h-5 w-auto object-contain"
             />
-            All rights reserved.
+            {footer.rightsReserved}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
-              Chính sách bảo mật
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Điều khoản dịch vụ
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Chính sách cookie
-            </a>
+            {footer.legalLinks.map((link, index) => (
+              <a key={index} href={link.href} className="hover:text-white transition-colors">
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

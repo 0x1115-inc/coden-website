@@ -2,15 +2,21 @@ import { ArrowRight, Zap, Users, Target } from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { motion } from 'framer-motion';
-import { defaultLocale } from '../locales';
+import { useLocale } from '../locales';
+import type { HomeFeatureIcon } from '../locales/types';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
-  const { hero, features, cta } = defaultLocale.home;
-  const featureIcons = [Zap, Target, Users];
+  const { content } = useLocale();
+  const { hero, features, cta } = content.home;
+  const featureIconMap: Record<HomeFeatureIcon, typeof Zap> = {
+    innovation: Zap,
+    precision: Target,
+    partnership: Users,
+  };
 
   return (
     <div className="min-h-screen">
@@ -30,46 +36,48 @@ export function HomePage({ onNavigate }: HomePageProps) {
               >
                
               </motion.div>
-              <motion.h1 
+              <motion.h1
                 className="text-gray-900 mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-4xl font-extrabold">
-                  Những ý tưởng táo bạo nhất
+                  {hero.titleLineOne}
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">đều có thể thành hiện thực</span>
+                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-xl font-extrabold">
+                  {hero.titleLineTwo}
+                </span>
               </motion.h1>
-              
-              <motion.p 
+
+              <motion.p
                 className="text-gray-600 mb-8 text-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Tại Coden, chúng tôi tin rằng công nghệ không chỉ là công cụ - mà là chất xúc tác để biến tầm nhìn thành giá trị cụ thể. Với năng lực tư duy hệ thống, đội ngũ tận tâm và kinh nghiệm triển khai thực tiễn, chúng tôi đồng hành cùng bạn để xây dựng những giải pháp dữ liệu đột phá, hiệu quả và bền vững.
+                {hero.description}
               </motion.p>
 
-              
-              
-              <motion.div 
+
+
+              <motion.div
                 className="flex flex-wrap gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
               >
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   onClick={() => onNavigate(hero.primaryCta.target)}
                   className="shadow-lg hover:shadow-xl transition-shadow"
                 >
                   {hero.primaryCta.label}
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   variant="outline"
                   onClick={() => onNavigate(hero.secondaryCta.target)}
                   className="shadow-sm hover:shadow-md transition-shadow"
@@ -78,8 +86,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </Button>
               </motion.div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="relative"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -88,11 +96,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
               {/* Decorative floating elements */}
               <motion.div
                 className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-2xl opacity-20 blur-xl"
-                animate={{ 
+                animate={{
                   y: [0, -20, 0],
                   rotate: [0, 5, 0]
                 }}
-                transition={{ 
+                transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut"
@@ -100,18 +108,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
               />
               <motion.div
                 className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-pink-400 to-orange-400 rounded-2xl opacity-20 blur-xl"
-                animate={{ 
+                animate={{
                   y: [0, 20, 0],
                   rotate: [0, -5, 0]
                 }}
-                transition={{ 
+                transition={{
                   duration: 5,
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
               />
-              
-              <motion.div 
+
+              <motion.div
                 className="aspect-square rounded-2xl overflow-hidden shadow-2xl relative z-10"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -124,9 +132,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 />
               </motion.div>
 
-              
-
-             
             </motion.div>
           </div>
         </div>
@@ -136,15 +141,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-gray-900 mb-4 text-2xl font-bold">Vì sao chọn Coden?</h2>
+            <h2 className="text-gray-900 mb-4 text-2xl font-bold">{features.title}</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Coden không chỉ cung cấp giải pháp công nghệ, chúng tôi đồng hành như một đối tác chiến lược. Với sự kết hợp giữa năng lực kỹ thuật, tư duy hệ thống và tinh thần phục vụ tận tâm, chúng tôi giúp doanh nghiệp, tổ chức khai thác tối đa giá trị từ dữ liệu và công nghệ.
+              {features.description}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.items.map((feature, index) => {
-              const Icon = featureIcons[index];
+            {features.items.map((feature) => {
+              const Icon = featureIconMap[feature.icon];
               return (
                 <div
                   key={feature.title}
@@ -166,17 +171,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-white mb-4 text-2xl">
-            Sẵn sàng biến ý tưởng của bạn thành hiện thực?
+            {cta.title}
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Còn chần chờ gì nữa? Hãy liên hệ với chúng tôi ngay hôm nay để bắt đầu hành trình chuyển đổi số và khám phá tiềm năng vô hạn của công nghệ cùng Coden.
+            {cta.description}
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             variant="secondary"
             onClick={() => onNavigate('contact')}
           >
-            Liên hệ ngay
+            {cta.buttonLabel}
           </Button>
         </div>
       </section>
