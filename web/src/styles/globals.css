@@ -134,6 +134,34 @@
   }
 }
 
+.privacy-policy-content h1 {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.privacy-policy-content h2 {
+  @apply text-2xl font-semibold text-gray-900 mt-10;
+}
+
+.privacy-policy-content h3 {
+  @apply text-xl font-semibold text-gray-900 mt-8;
+}
+
+.privacy-policy-content p {
+  @apply text-base text-gray-700;
+}
+
+.privacy-policy-content ul {
+  @apply list-disc pl-6 text-gray-700 space-y-2;
+}
+
+.privacy-policy-content li {
+  @apply text-base text-gray-700;
+}
+
+.privacy-policy-content a {
+  @apply text-indigo-600 underline underline-offset-4 hover:text-indigo-700;
+}
+
 /**
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */

@@ -132,6 +132,6 @@ export interface LocaleContent {
     lastUpdatedLabel: string;
     lastUpdatedDate: string;
     introduction: string;
-    sections: { title: string; paragraphs: string[] }[];
+    bodyHtml: string;
   };
 }
