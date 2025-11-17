@@ -89,9 +89,9 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.label}
               </button>
             ))}
-            <Button onClick={() => onNavigate('contact')}>
+            {/* <Button onClick={() => onNavigate('contact')}>
               {ctaLabel}
-            </Button>
+            </Button> */}
             <LanguageToggle variant="desktop" />
           </div>
 

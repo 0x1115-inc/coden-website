@@ -1,5 +1,6 @@
 import type { LocaleContent } from "./types";
 import { masterPrivacyPolicyViHtml } from "../content/privacy/masterPrivacyPolicyVi";
+import { greenVectorAddendumViHtml } from "../content/privacy/greenVectorAddendumVi";
 
 export const vi: LocaleContent = {
   meta: {
@@ -261,7 +262,7 @@ export const vi: LocaleContent = {
       },
     ],
     legalLinks: [
-      { label: "Chính sách bảo mật", href: "/privacy-policy", target: "privacy" },
+      { label: "Chính sách bảo mật", href: "/privacy-policy", target: "privacy" },     
       { label: "Điều khoản dịch vụ", href: "#" },
       { label: "Chính sách cookie", href: "#" },
     ],
@@ -277,5 +278,15 @@ export const vi: LocaleContent = {
     introduction:
       "Chính sách Quyền riêng tư Tổng thể này (“Chính sách”) mô tả cách CÔNG TY TNHH CODEN (“CODEN”, “chúng tôi”, “của chúng tôi” hoặc “chúng tôi”) thu thập, sử dụng, tiết lộ và bảo vệ thông tin cá nhân trên tất cả các sản phẩm phần mềm, ứng dụng và giải pháp kỹ thuật số mà chúng tôi cung cấp hoặc vận hành.",
     bodyHtml: masterPrivacyPolicyViHtml,
+  },
+  privacyAddendums: {
+    greenVector: {
+      title: "Phụ lục Quyền riêng tư Ứng dụng Green Vector",
+      lastUpdatedLabel: "Cập nhật lần cuối",
+      lastUpdatedDate: "17-11-2025",
+      introduction:
+        "Phụ lục này bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden và áp dụng riêng cho ứng dụng di động Green Vector, trong trường hợp có khác biệt thì Phụ lục sẽ được ưu tiên.",
+      bodyHtml: greenVectorAddendumViHtml,
+    },
   },
 };

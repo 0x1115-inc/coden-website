@@ -1,5 +1,6 @@
 import type { LocaleContent } from "./types";
 import { masterPrivacyPolicyEnHtml } from "../content/privacy/masterPrivacyPolicyEn";
+import { greenVectorAddendumEnHtml } from "../content/privacy/greenVectorAddendumEn";
 
 export const en: LocaleContent = {
   meta: {
@@ -273,5 +274,15 @@ export const en: LocaleContent = {
     introduction:
       "This Master Privacy Policy (“Policy”) describes how CODEN COMPANY LIMITED (“CODEN”, “we”, “our”, or “us”) collects, uses, discloses, and protects personal information across all software products, applications, and digital solutions that we provide or operate.",
     bodyHtml: masterPrivacyPolicyEnHtml,
+  },
+  privacyAddendums: {
+    greenVector: {
+      title: "Green Vector App Privacy Addendum",
+      lastUpdatedLabel: "Last updated",
+      lastUpdatedDate: "2025-11-17",
+      introduction:
+        "This addendum supplements the CODEN Master Privacy Policy specifically for the Green Vector mobile app and prevails whenever an app-specific rule differs from the master policy.",
+      bodyHtml: greenVectorAddendumEnHtml,
+    },
   },
 };

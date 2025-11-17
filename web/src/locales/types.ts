@@ -1,5 +1,5 @@
 export type LocaleId = "vi" | "en";
-export type PageId = "home" | "about" | "works" | "contact" | "privacy";
+export type PageId = "home" | "about" | "works" | "contact" | "privacy" | "privacyGreenVector";
 
 export type HomeFeatureIcon = "innovation" | "precision" | "partnership";
 export type WorksServiceKey =
@@ -133,5 +133,14 @@ export interface LocaleContent {
     lastUpdatedDate: string;
     introduction: string;
     bodyHtml: string;
+  };
+  privacyAddendums: {
+    greenVector: {
+      title: string;
+      lastUpdatedLabel: string;
+      lastUpdatedDate: string;
+      introduction: string;
+      bodyHtml: string;
+    };
   };
 }
