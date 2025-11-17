@@ -3,10 +3,11 @@ import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { motion } from 'framer-motion';
 import { useLocale } from '../locales';
+import type { PageId } from '../locales';
 import type { HomeFeatureIcon } from '../locales/types';
 
 interface HomePageProps {
-  onNavigate: (page: string) => void;
+  onNavigate: (page: PageId) => void;
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {

@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { Button } from './ui/button';
 import logoBlack from '../assets/logo-horizontal-black.png';
 import { localeOptions, useLocale } from '../locales';
-import type { LocaleId } from '../locales';
+import type { LocaleId, PageId } from '../locales';
 
 interface HeaderProps {
-  currentPage: string;
-  onNavigate: (page: string) => void;
+  currentPage: PageId;
+  onNavigate: (page: PageId) => void;
 }
 
 export function Header({ currentPage, onNavigate }: HeaderProps) {

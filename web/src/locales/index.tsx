@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { vi } from "./vi";
 import { en } from "./en";
-import type { LocaleContent, LocaleId } from "./types";
+import type { LocaleContent, LocaleId, PageId } from "./types";
 
 const STORAGE_KEY = "coden:locale";
 
@@ -72,4 +72,4 @@ export const localeOptions: { id: LocaleId; shortLabel: string; name: string }[]
   name: locale.meta.languageName,
 }));
 
-export type { LocaleContent, LocaleId } from "./types";
+export type { LocaleContent, LocaleId, PageId } from "./types";

@@ -260,7 +260,7 @@ export const vi: LocaleContent = {
       },
     ],
     legalLinks: [
-      { label: "Chính sách bảo mật", href: "#" },
+      { label: "Chính sách bảo mật", href: "/privacy-policy", target: "privacy" },
       { label: "Điều khoản dịch vụ", href: "#" },
       { label: "Chính sách cookie", href: "#" },
     ],
@@ -268,5 +268,42 @@ export const vi: LocaleContent = {
   },
   images: {
     errorAlt: "Hình ảnh thay thế khi không tải được",
+  },
+  privacy: {
+    title: "Chính sách bảo mật",
+    lastUpdatedLabel: "Cập nhật lần cuối",
+    lastUpdatedDate: "01/11/2024",
+    introduction:
+      "Tài liệu này mô tả cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn. Đây là phiên bản mẫu và có thể được cập nhật để phù hợp với quy định và quy trình thực tế.",
+    sections: [
+      {
+        title: "Phạm vi áp dụng",
+        paragraphs: [
+          "Chính sách này áp dụng cho tất cả các sản phẩm, dịch vụ và nội dung số thuộc sở hữu của Coden. Nó giải thích cách dữ liệu được xử lý khi bạn truy cập website hoặc tương tác với đội ngũ của chúng tôi.",
+          "Trong trường hợp pháp luật yêu cầu, chúng tôi sẽ cung cấp thông tin bổ sung hoặc xin sự đồng ý rõ ràng trước khi thu thập dữ liệu.",
+        ],
+      },
+      {
+        title: "Thông tin được thu thập",
+        paragraphs: [
+          "Chúng tôi có thể thu thập các dữ liệu cơ bản như họ tên, email, số điện thoại, thông tin tổ chức, cùng với dữ liệu kỹ thuật (ví dụ: địa chỉ IP, loại trình duyệt, cookies).",
+          "Các biểu mẫu liên hệ, khảo sát hoặc tính năng đăng ký sẽ thông báo cụ thể về dữ liệu cần cung cấp và mục đích sử dụng.",
+        ],
+      },
+      {
+        title: "Sử dụng và bảo vệ dữ liệu",
+        paragraphs: [
+          "Dữ liệu được dùng để phản hồi yêu cầu hỗ trợ, cung cấp dịch vụ được cá nhân hoá, cải thiện trải nghiệm và đảm bảo an toàn hệ thống.",
+          "Chúng tôi áp dụng các biện pháp bảo mật ở mức tổ chức và kỹ thuật để ngăn chặn truy cập trái phép. Chỉ những nhân sự có thẩm quyền mới được phép xử lý dữ liệu cá nhân.",
+        ],
+      },
+      {
+        title: "Liên hệ",
+        paragraphs: [
+          "Nếu bạn có câu hỏi về chính sách bảo mật hoặc muốn thực hiện quyền liên quan đến dữ liệu cá nhân, vui lòng gửi email đến info@coden.org.",
+          "Coden sẽ phản hồi trong thời gian sớm nhất và cập nhật chính sách khi có thay đổi quan trọng.",
+        ],
+      },
+    ],
   },
 };

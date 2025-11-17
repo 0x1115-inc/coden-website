@@ -1,8 +1,14 @@
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import type { MouseEvent } from 'react';
 import logoWhite from '../assets/logo-horizontal-white.png';
 import { useLocale } from '../locales';
+import type { PageId } from '../locales';
 
-export function Footer() {
+interface FooterProps {
+  onNavigate?: (page: PageId) => void;
+}
+
+export function Footer({ onNavigate }: FooterProps) {
   const { content } = useLocale();
   const footer = content.footer;
 
@@ -14,6 +20,13 @@ export function Footer() {
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Mail, href: '#', label: 'Email' },
   ];
+
+  const handleLinkClick = (event: MouseEvent<HTMLAnchorElement>, target?: PageId) => {
+    if (target && onNavigate) {
+      event.preventDefault();
+      onNavigate(target);
+    }
+  };
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -50,7 +63,11 @@ export function Footer() {
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href={link.href} className="hover:text-white transition-colors">
+                    <a
+                      href={link.href}
+                      className="hover:text-white transition-colors"
+                      onClick={(event) => handleLinkClick(event, link.target)}
+                    >
                       {link.label}
                     </a>
                   </li>
@@ -73,7 +90,12 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             {footer.legalLinks.map((link, index) => (
-              <a key={index} href={link.href} className="hover:text-white transition-colors">
+              <a
+                key={index}
+                href={link.href}
+                className="hover:text-white transition-colors"
+                onClick={(event) => handleLinkClick(event, link.target)}
+              >
                 {link.label}
               </a>
             ))}

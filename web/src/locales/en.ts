@@ -256,7 +256,7 @@ export const en: LocaleContent = {
       },
     ],
     legalLinks: [
-      { label: "Privacy policy", href: "#" },
+      { label: "Privacy policy", href: "/privacy-policy", target: "privacy" },
       { label: "Terms of service", href: "#" },
       { label: "Cookie policy", href: "#" },
     ],
@@ -264,5 +264,42 @@ export const en: LocaleContent = {
   },
   images: {
     errorAlt: "Placeholder image when the original fails to load",
+  },
+  privacy: {
+    title: "Privacy policy",
+    lastUpdatedLabel: "Last updated",
+    lastUpdatedDate: "November 1, 2024",
+    introduction:
+      "This sample policy describes how we collect, use, and protect your personal information. It acts as placeholder content and can be updated to reflect actual legal requirements and operational processes.",
+    sections: [
+      {
+        title: "Scope",
+        paragraphs: [
+          "The policy applies to every product, service, and digital property operated by Coden. It explains what happens to data whenever you visit our website or interact with our team.",
+          "Where local regulations require it, we will provide additional notices or obtain explicit consent before gathering information.",
+        ],
+      },
+      {
+        title: "Information we collect",
+        paragraphs: [
+          "We may collect basic contact details such as your name, email address, phone number, and organization, along with technical information like IP address, browser type, or cookies.",
+          "Forms, surveys, or signup flows will always clarify which data points are needed and the purpose behind each request.",
+        ],
+      },
+      {
+        title: "How we use and protect data",
+        paragraphs: [
+          "Data helps us answer support inquiries, personalize services, improve our experience, and keep our systems secure.",
+          "We apply organizational and technical safeguards to prevent unauthorized access. Only authorized personnel may process personal information.",
+        ],
+      },
+      {
+        title: "Contact us",
+        paragraphs: [
+          "For any questions about this privacy policy or to exercise your data rights, email us at info@coden.org.",
+          "Coden will respond as soon as possible and update this sample policy whenever significant changes occur.",
+        ],
+      },
+    ],
   },
 };

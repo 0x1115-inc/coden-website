@@ -1,4 +1,5 @@
 export type LocaleId = "vi" | "en";
+export type PageId = "home" | "about" | "works" | "contact" | "privacy";
 
 export type HomeFeatureIcon = "innovation" | "precision" | "partnership";
 export type WorksServiceKey =
@@ -21,7 +22,7 @@ export interface LocaleContent {
     title: string;
   };
   header: {
-    navigation: { label: string; target: string }[];
+    navigation: { label: string; target: PageId }[];
     ctaLabel: string;
     logoAlt: string;
     goHomeLabel: string;
@@ -39,8 +40,8 @@ export interface LocaleContent {
       titleLineOne: string;
       titleLineTwo: string;
       description: string;
-      primaryCta: { label: string; target: string };
-      secondaryCta: { label: string; target: string };
+      primaryCta: { label: string; target: PageId };
+      secondaryCta: { label: string; target: PageId };
       imageAlt: string;
     };
     features: {
@@ -119,11 +120,18 @@ export interface LocaleContent {
   };
   footer: {
     tagline: string;
-    sections: { title: string; links: { label: string; href: string }[] }[];
-    legalLinks: { label: string; href: string }[];
+    sections: { title: string; links: { label: string; href: string; target?: PageId }[] }[];
+    legalLinks: { label: string; href: string; target?: PageId }[];
     rightsReserved: string;
   };
   images: {
     errorAlt: string;
+  };
+  privacy: {
+    title: string;
+    lastUpdatedLabel: string;
+    lastUpdatedDate: string;
+    introduction: string;
+    sections: { title: string; paragraphs: string[] }[];
   };
 }
