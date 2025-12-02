@@ -279,9 +279,9 @@ export const en: LocaleContent = {
     greenVector: {
       title: "Green Vector App Privacy Addendum",
       lastUpdatedLabel: "Last updated",
-      lastUpdatedDate: "2025-11-17",
+      lastUpdatedDate: "2025-12-02",
       introduction:
-        "This addendum supplements the CODEN Master Privacy Policy specifically for the Green Vector mobile app and prevails whenever an app-specific rule differs from the master policy.",
+        "This Green Vector App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Green Vector mobile application (“App”). By using the Green Vector App, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the App.",
       bodyHtml: greenVectorAddendumEnHtml,
     },
   },

@@ -283,9 +283,9 @@ export const vi: LocaleContent = {
     greenVector: {
       title: "Phụ lục Quyền riêng tư Ứng dụng Green Vector",
       lastUpdatedLabel: "Cập nhật lần cuối",
-      lastUpdatedDate: "17-11-2025",
+      lastUpdatedDate: "02-12-2025",
       introduction:
-        "Phụ lục này bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden và áp dụng riêng cho ứng dụng di động Green Vector, trong trường hợp có khác biệt thì Phụ lục sẽ được ưu tiên.",
+        "Phụ lục Quyền riêng tư Ứng dụng Green Vector này (“Phụ lục”) bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden (“Chính sách Chung”) và áp dụng cụ thể cho ứng dụng di động Green Vector (“Ứng dụng”). Bằng việc sử dụng Ứng dụng Green Vector, bạn đồng ý với Phụ lục này và Chính sách Tổng thể. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này sẽ được ưu tiên áp dụng cho các vấn đề liên quan đến Ứng dụng.",
       bodyHtml: greenVectorAddendumViHtml,
     },
   },
