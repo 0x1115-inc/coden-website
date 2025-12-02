@@ -20,7 +20,7 @@
 - `cmd/`: CLI applications for the project.
 - `config/`: Configuration files and templates.
 - `deployments/`: Deployment manifests and scripts. 
-- `docs/`: Documentation related to strategies and system design.
+- `docs/`: Documentation related to appliction content, strategies and system design.
 - `internal/`: Project internal libraries and modules.
 - `pkg/`: Public libraries and packages.
 - `scripts/`: Utility scripts for automation and maintenance.
