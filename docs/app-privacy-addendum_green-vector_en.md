@@ -1,7 +1,7 @@
 # **App Privacy Addendum**
 
 **Supplement to the Master Privacy Policy of CODEN COMPANY LIMITED**  
-*Last updated: 2025-11-17*  
+*Last updated: 2025-12-02*  
 This Green Vector App Privacy Addendum (“Addendum”) supplements the **Master Privacy Policy of CODEN COMPANY LIMITED** (“Master Policy”) and applies specifically to the **Green Vector mobile application** (“App”).  
 By using the Green Vector App, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the App.
 
@@ -30,13 +30,13 @@ No sensitive personal information is requested or required.
 
 When you submit a plant image for diagnosis:
 
-- The image is sent to a third-party AI service provider (Groq API) to analyze plant health.  
-- Only the plant image image is transmitted. This image is immediately discarded by CODEN and the third-party service upon completion of the analysis. The image is not retained or stored on any CODEN or third-party server.  
-- No metadata (GPS, EXIF, or timestamps) is extracted.  
-- CODEN does not store the image outside your device.  
-- Images are used only for the purpose of generating plant diagnosis results.
+- The image is transmitted to OpenAI’s ChatGPT API for AI-based visual analysis.
+- Only the plant image is sent. The image is not stored by CODEN and, according to OpenAI’s API data-usage policy, will not be used to train OpenAI models.
+- CODEN does not store any copy of the image outside your device.
+- No metadata (GPS, EXIF, timestamps) is extracted.
+- Images are used exclusively to generate plant-health analysis results.
 
-The Groq API processes data according to its own privacy policy.
+The OpenAI API processes your data in accordance with its own privacy policy.
 
 ## **4 - Local data storage**
 
@@ -64,9 +64,11 @@ The App does not send marketing notifications.
 
 The App uses the following external services:
 
-### **A. Groq API (AI Image Analysis)**
-Used solely for analyzing plant images submitted for diagnosis.  
-The App may transmit your plant image to this service as part of the analysis request.  
+### **A. OpenAI API (ChatGPT – AI Image and Text Analysis)**
+The App uses the OpenAI ChatGPT API to analyze images submitted for diagnosis and to support AI-based conversational guidance.
+Your plant image and your chat messages may be transmitted to OpenAI as part of the analysis request.
+OpenAI does not use API data to train its models, in accordance with its API data-usage policy.
+
 No other third-party SDKs, analytics tools, advertising frameworks, or tracking technologies are integrated into the App.
 
 ## **7 - Data Retention**
@@ -110,8 +112,8 @@ While we implement commercially reasonable safeguards, no system can be fully se
 
 ## **11 - International data transfers**
 
-When using the “Plant Doctor” feature, your plant image may be transmitted to Groq’s servers, which may be located outside your country of residence.  
-By using this feature, you consent to such transfers.
+When using the “Plant Doctor” feature or AI chat, your plant images and messages may be transmitted to servers operated by OpenAI, which may be located outside your country of residence.
+By using these features, you consent to such data transfers.
 
 ## **12 - Changes to this Addendum**
 

@@ -1,7 +1,7 @@
 # **Phụ lục về Quyền riêng tư của Ứng dụng**
 
 **Bổ sung cho Chính sách Quyền riêng tư Tổng thể của CÔNG TY TNHH CODEN**  
-*Cập nhật lần cuối: 17-11-2025*  
+*Cập nhật lần cuối: 02-12-2025*  
 Phụ lục Quyền riêng tư Ứng dụng Green Vector này (“Phụ lục”) bổ sung cho **Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden** (“Chính sách Chung”) và áp dụng cụ thể cho **ứng dụng di động Green Vector** (“Ứng dụng”).  
 Bằng việc sử dụng Ứng dụng Green Vector, bạn đồng ý với Phụ lục này và Chính sách Tổng thể. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này sẽ được ưu tiên áp dụng cho các vấn đề liên quan đến Ứng dụng.
 
@@ -29,14 +29,13 @@ Không có thông tin cá nhân nhạy cảm nào được yêu cầu hoặc b�
 ## **3 - Xử lý hình ảnh để Chẩn đoán Cây trồng**
 
 Khi bạn gửi hình ảnh cây để chẩn đoán:
+- Hình ảnh được truyền đến OpenAI ChatGPT API để phân tích bằng trí tuệ nhân tạo.
+- Chỉ hình ảnh cây trồng được gửi đi. Hình ảnh không được CODEN lưu trữ, và theo chính sách sử dụng dữ liệu API của OpenAI, dữ liệu không được sử dụng để huấn luyện mô hình.
+- CODEN không lưu bất kỳ bản sao nào bên ngoài thiết bị của bạn.
+- Không có siêu dữ liệu (GPS, EXIF, dấu thời gian) được trích xuất.
+- Hình ảnh chỉ được sử dụng nhằm mục đích tạo kết quả chẩn đoán.
 
-- Hình ảnh được gửi đến nhà cung cấp dịch vụ AI của bên thứ ba (Groq API) để phân tích sức khỏe cây trồng.  
-- Chỉ hình ảnh cây trồng được truyền đi. Hình ảnh này sẽ bị CODEN và dịch vụ bên thứ ba hủy bỏ ngay lập tức sau khi hoàn thành việc phân tích. Hình ảnh không được giữ lại hoặc lưu trữ trên bất kỳ máy chủ nào của CODEN hoặc bên thứ ba.  
-- Không có siêu dữ liệu (GPS, EXIF, hoặc dấu thời gian) nào được trích xuất.  
-- CODEN không lưu trữ hình ảnh bên ngoài thiết bị của bạn.  
-- Hình ảnh chỉ được sử dụng cho mục đích tạo ra kết quả chẩn đoán cây trồng.
-
-Groq API xử lý dữ liệu theo chính sách quyền riêng tư riêng của họ.
+OpenAI xử lý dữ liệu theo chính sách quyền riêng tư riêng của họ.
 
 ## **4 - Lưu trữ dữ liệu cục bộ**
 
@@ -64,11 +63,13 @@ Thông báo được tạo cục bộ trên thiết bị của bạn và không 
 
 Ứng dụng sử dụng các dịch vụ bên ngoài sau:
 
-### **A. Groq API (Phân tích hình ảnh AI)**
+### **A. OpenAI API (ChatGPT – Phân tích hình ảnh và hội thoại AI)**
 
-Được sử dụng duy nhất để phân tích hình ảnh cây trồng được gửi để chẩn đoán.  
-Ứng dụng có thể truyền hình ảnh cây trồng của bạn đến dịch vụ này như một phần của yêu cầu phân tích.  
-Không có SDK, công cụ phân tích, khung quảng cáo hoặc công nghệ theo dõi của bên thứ ba nào khác được tích hợp vào Ứng dụng.IV. 
+Ứng dụng sử dụng OpenAI ChatGPT API để phân tích hình ảnh được gửi lên nhằm chẩn đoán sức khỏe cây trồng, đồng thời hỗ trợ trả lời câu hỏi trong phần trò chuyện AI.
+Hình ảnh cây trồng và nội dung trò chuyện có thể được truyền đến OpenAI để phục vụ xử lý.
+OpenAI không sử dụng dữ liệu API để huấn luyện mô hình theo chính sách sử dụng dữ liệu hiện hành.
+
+Ứng dụng không tích hợp bất kỳ SDK, công cụ phân tích, hệ thống quảng cáo hoặc công nghệ theo dõi nào khác.
 
 ## **7 - Lưu giữ dữ liệu**
 
@@ -112,8 +113,8 @@ Mặc dù chúng tôi thực hiện các biện pháp bảo vệ hợp lý về 
 
 ## **11 - Chuyển dữ liệu quốc tế**
 
-Khi sử dụng tính năng “Plant Doctor”, hình ảnh cây trồng của bạn có thể được truyền đến các máy chủ của Groq, có thể nằm ngoài quốc gia cư trú của bạn.  
-Bằng việc sử dụng tính năng này, bạn đồng ý với việc chuyển dữ liệu như vậy.
+Khi sử dụng tính năng “Plant Doctor” hoặc trò chuyện AI, hình ảnh và nội dung trò chuyện của bạn có thể được truyền đến máy chủ của OpenAI, có thể đặt tại các quốc gia ngoài nơi cư trú của bạn.
+Bằng việc sử dụng các tính năng này, bạn đồng ý với việc truyền dữ liệu như vậy.
 
 ## **12 - Những thay đổi đối với Phụ lục**
 
