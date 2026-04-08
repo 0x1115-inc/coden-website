@@ -1,5 +1,8 @@
 export type LocaleId = "vi" | "en";
 export type PageId = "home" | "about" | "works" | "contact" | "privacy" | "privacyGreenVector";
+export type HeaderNavigationItem =
+  | { label: string; target: PageId; href?: never }
+  | { label: string; href: string; target?: never };
 
 export type HomeFeatureIcon = "innovation" | "precision" | "partnership";
 export type WorksServiceKey =
@@ -22,7 +25,7 @@ export interface LocaleContent {
     title: string;
   };
   header: {
-    navigation: { label: string; target: PageId }[];
+    navigation: HeaderNavigationItem[];
     ctaLabel: string;
     logoAlt: string;
     goHomeLabel: string;

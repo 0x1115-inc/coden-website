@@ -77,17 +77,27 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navigation.map((item) => (
-              <button
-                key={item.target}
-                onClick={() => onNavigate(item.target)}
-                className={`transition-colors ${
-                  currentPage === item.target
-                    ? 'text-indigo-600'
-                    : 'text-gray-700 hover:text-indigo-600'
-                }`}
-              >
-                {item.label}
-              </button>
+              'target' in item ? (
+                <button
+                  key={item.target}
+                  onClick={() => onNavigate(item.target)}
+                  className={`transition-colors ${
+                    currentPage === item.target
+                      ? 'text-indigo-600'
+                      : 'text-gray-700 hover:text-indigo-600'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-gray-700 transition-colors hover:text-indigo-600"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             {/* <Button onClick={() => onNavigate('contact')}>
               {ctaLabel}
@@ -110,20 +120,31 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
               {navigation.map((item) => (
-                <button
-                  key={item.target}
-                  onClick={() => {
-                    onNavigate(item.target);
-                    setMobileMenuOpen(false);
-                  }}
-                  className={`text-left px-4 py-2 rounded-lg transition-colors ${
-                    currentPage === item.target
-                      ? 'bg-indigo-50 text-indigo-600'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  {item.label}
-                </button>
+                'target' in item ? (
+                  <button
+                    key={item.target}
+                    onClick={() => {
+                      onNavigate(item.target);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`text-left px-4 py-2 rounded-lg transition-colors ${
+                      currentPage === item.target
+                        ? 'bg-indigo-50 text-indigo-600'
+                        : 'text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-left px-4 py-2 rounded-lg text-gray-700 transition-colors hover:bg-gray-50"
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               <LanguageToggle variant="mobile" />
             </div>

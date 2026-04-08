@@ -15,6 +15,7 @@ export const vi: LocaleContent = {
       { label: "Trang chủ", target: "home" },
       { label: "Giới thiệu", target: "about" },
       { label: "Dịch vụ", target: "works" },
+      { label: "Blog", href: "https://blog.coden.org" },
       { label: "Liên hệ", target: "contact" },
     ],
     ctaLabel: "Liên hệ ngay",

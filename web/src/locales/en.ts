@@ -15,6 +15,7 @@ export const en: LocaleContent = {
       { label: "Home", target: "home" },
       { label: "About", target: "about" },
       { label: "Services", target: "works" },
+      { label: "Blog", href: "https://blog.coden.org" },
       { label: "Contact", target: "contact" },
     ],
     ctaLabel: "Contact us",
