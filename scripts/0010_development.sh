@@ -19,4 +19,4 @@ docker run --rm -it \
     -v ${PWD}/web:/app \
     -w /app \
     -p 127.0.0.1:5173:5173 \
-    node npm run dev -- --host
+    node sh -c "npm install && npm run dev -- --host 0.0.0.0"
