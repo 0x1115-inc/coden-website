@@ -83,7 +83,7 @@ export const vi: LocaleContent = {
     heroSubtitle:
       "Nơi hội tụ của sự những cá nhân tử tế, đam mê công nghệ và khát khao giá trị bền vững.",
     storyParagraphs: [
-      "Coden được hình thành từ một khát vọng giản dị mà sâu sắc: xây dựng một cộng đồng các nhà phát triển phần mềm nhân văn.",
+      "Coden (/ˈkoʊ.dən/) được hình thành từ một khát vọng giản dị mà sâu sắc: xây dựng một cộng đồng các nhà phát triển phần mềm nhân văn.",
       "Chúng tôi tin rằng công nghệ là để phục vụ con người, chứ không phải thay thế con người. Trong một thế giới đầy biến động, niềm tin là giá trị quý giá nhất để liên kết nhân loại. Chúng tôi thấu hiểu điều đó, và kiến tạo một không gian nơi niềm tin được vun đắp bằng sự chân thành, chính trực, và cùng nhau tạo ra giá trị lâu dài.",
       "Coden cũng là biểu tượng của sự kết nối – giữa con người với công nghệ, giữa ý tưởng với hiện thực, giữa tổ chức với tổ chức. Chúng tôi nỗ lực đưa công nghệ số vào ứng dụng thực tiễn, giúp doanh nghiệp giải quyết bài toán của mình một cách hiệu quả và linh hoạt.",
       "Tập hợp những người yêu công nghệ, đam mê giải quyết các vấn đề và luôn khao khát đóng góp cho xã hội, chúng tôi cùng nhau viết nên hành trình phát triển các giải pháp phần mềm vì con người. Từ những ý tưởng nhỏ bé đến các sản phẩm có tầm ảnh hưởng lớn, chúng tôi luôn đặt con người làm trung tâm trong mọi quyết định và hành động.",
@@ -124,8 +124,11 @@ export const vi: LocaleContent = {
     teamMembers: [
       { image: "thanh", name: "Thành Vũ", role: "Giám đốc Công nghệ" },
       { image: "duc", name: "Đức Phạm", role: "Giám đốc Kinh doanh" },
-      { image: "cuong", name: "Cương Đỗ", role: "Trưởng Ban Văn hoá Doanh nghiệp" },
       { image: "minh", name: "Minh Phạm", role: "Giám đốc Sáng tạo" },
+      { image: "binhnt", name: "Bình Nguyễn", role: "Trưởng phòng Dự án" },
+      { image: "duchm", name: "Đức Hoàng", role: "Kiến trúc sư giải pháp" },
+      { image: "khanhbd", name: "Khanh Bùi", role: "Trưởng phòng Quan hệ đối tác" },
+      { image: "cuong", name: "Cương Đỗ", role: "Trưởng Ban Văn hoá Doanh nghiệp" },      
     ],
   },
   works: {

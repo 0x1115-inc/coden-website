@@ -82,7 +82,7 @@ export const en: LocaleContent = {
     heroTitle: "Who are we?",
     heroSubtitle: "A collective of kind, passionate technologists who pursue sustainable impact.",
     storyParagraphs: [
-      "Coden was born from a simple yet profound aspiration: build a community of human-centered software developers.",
+      "Coden (/ˈkoʊ.dən/) was born from a simple yet profound aspiration: build a community of human-centered software developers.",
       "We believe technology exists to serve people—not to replace them. In an ever-changing world, trust is the rare glue that connects us. We honor that truth and create a space where trust grows from sincerity, integrity, and a commitment to long-term value.",
       "Coden also symbolizes connection—between people and technology, between ideas and execution, between organizations. We strive to bring digital tools into practical use so businesses can solve their challenges efficiently and adaptively.",
       "As a group of technology lovers who enjoy problem solving and care about giving back, we keep people at the center of every solution. From small ideas to high-impact products, we build software with empathy and responsibility.",
@@ -121,8 +121,11 @@ export const en: LocaleContent = {
     teamMembers: [
       { image: "thanh", name: "Thành Vũ", role: "Chief Technology Officer" },
       { image: "duc", name: "Đức Phạm", role: "Chief Business Officer" },
-      { image: "cuong", name: "Cương Đỗ", role: "Head of Culture & People" },
       { image: "minh", name: "Minh Phạm", role: "Creative Director" },
+      { image: "binhnt", name: "Bình Nguyễn", role: "PMO Manager" },
+      { image: "duchm", name: "Đức Hoàng", role: "Solution Architect" },
+      { image: "khanhbd", name: "Khanh Bùi", role: "Partnership Manager" },      
+      { image: "cuong", name: "Cương Đỗ", role: "Head of Culture & People" },      
     ],
   },
   works: {

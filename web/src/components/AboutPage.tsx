@@ -1,9 +1,12 @@
 import { Heart, Boxes, Shield, Sprout } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import duc from '../assets/duc.jpg';
-import cuong from '../assets/cuong.jpg';
+import duc from '../assets/duc-cbo.jpg';
+import cuong from '../assets/cuong-head-of-culture.jpg';
 import minh from '../assets/minh.jpg';
 import thanh from '../assets/thanh.jpg';
+import duchm from '../assets/duc-sa.jpg';
+import khanhbd from '../assets/khanh-partnership-manager.jpeg';
+import binhnt from '../assets/binhnt.jpg';
 import { useLocale } from '../locales';
 import type { TeamImageKey, ValueIconKey } from '../locales/types';
 
@@ -23,6 +26,9 @@ export function AboutPage() {
     duc,
     cuong,
     minh,
+    duchm,
+    khanhbd,
+    binhnt,
   };
 
   return (

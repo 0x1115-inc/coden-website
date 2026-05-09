@@ -14,7 +14,7 @@ export type WorksServiceKey =
   | "security";
 export type ValueIconKey = "efficiency" | "integrity" | "empathy" | "sustainability";
 export type ContactInfoIconKey = "email" | "phone" | "office";
-export type TeamImageKey = "thanh" | "duc" | "cuong" | "minh";
+export type TeamImageKey = "thanh" | "duc" | "cuong" | "minh" | "duchm" | "khanhbd" | "binhnt";
 
 export interface LocaleContent {
   meta: {
