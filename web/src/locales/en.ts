@@ -232,40 +232,8 @@ export const en: LocaleContent = {
     },
   },
   footer: {
-    tagline: "Building solutions, nurturing communities.",
-    sections: [
-      {
-        title: "Company",
-        links: [
-          { label: "About", href: "#" },
-          { label: "Team", href: "#" },
-          { label: "Blog", href: "#" },
-          { label: "Press", href: "#" },
-        ],
-      },
-      {
-        title: "Products & Services",
-        links: [
-          { label: "Features", href: "#" },
-          { label: "Pricing", href: "#" },
-          { label: "Security", href: "#" },
-          { label: "Release notes", href: "#" },
-        ],
-      },
-      {
-        title: "Resources",
-        links: [
-          { label: "Docs", href: "#" },
-          { label: "Guides", href: "#" },
-          { label: "API status", href: "#" },
-          { label: "Support", href: "#" },
-        ],
-      },
-    ],
     legalLinks: [
       { label: "Privacy policy", href: "/privacy-policy", target: "privacy" },
-      { label: "Terms of service", href: "#" },
-      { label: "Cookie policy", href: "#" },
     ],
     rightsReserved: "All rights reserved.",
   },

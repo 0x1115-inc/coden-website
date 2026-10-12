@@ -137,8 +137,6 @@ export interface LocaleContent {
     };
   };
   footer: {
-    tagline: string;
-    sections: { title: string; links: { label: string; href: string; target?: PageId }[] }[];
     legalLinks: { label: string; href: string; target?: PageId }[];
     rightsReserved: string;
   };

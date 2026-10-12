@@ -236,40 +236,8 @@ export const vi: LocaleContent = {
     },
   },
   footer: {
-    tagline: "Tạo giải pháp, dựng cộng đồng.",
-    sections: [
-      {
-        title: "Thông tin Công ty",
-        links: [
-          { label: "Giới thiệu", href: "#" },
-          { label: "Đội ngũ", href: "#" },
-          { label: "Blog", href: "#" },
-          { label: "Press", href: "#" },
-        ],
-      },
-      {
-        title: "Sản phẩm & Dịch vụ",
-        links: [
-          { label: "Tính năng", href: "#" },
-          { label: "Giá cả", href: "#" },
-          { label: "Bảo mật", href: "#" },
-          { label: "Cập nhật", href: "#" },
-        ],
-      },
-      {
-        title: "Tài nguyên",
-        links: [
-          { label: "Tài liệu", href: "#" },
-          { label: "Hướng dẫn", href: "#" },
-          { label: "Trạng thái API", href: "#" },
-          { label: "Hỗ trợ", href: "#" },
-        ],
-      },
-    ],
     legalLinks: [
-      { label: "Chính sách bảo mật", href: "/privacy-policy", target: "privacy" },     
-      { label: "Điều khoản dịch vụ", href: "#" },
-      { label: "Chính sách cookie", href: "#" },
+      { label: "Chính sách bảo mật", href: "/privacy-policy", target: "privacy" },
     ],
     rightsReserved: "Mọi quyền được bảo lưu.",
   },
