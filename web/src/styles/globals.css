@@ -162,6 +162,23 @@
   @apply text-indigo-600 underline underline-offset-4 hover:text-indigo-700;
 }
 
+.privacy-policy-content .policy-table {
+  @apply overflow-x-auto;
+}
+
+.privacy-policy-content table {
+  @apply w-full border-collapse text-sm text-gray-700;
+}
+
+.privacy-policy-content th,
+.privacy-policy-content td {
+  @apply border border-gray-200 px-3 py-2 text-left align-top;
+}
+
+.privacy-policy-content th {
+  @apply bg-gray-50 font-semibold text-gray-900;
+}
+
 /**
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */

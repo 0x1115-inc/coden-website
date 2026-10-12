@@ -7,6 +7,7 @@ import { WorksPage } from './components/WorksPage';
 import { ContactPage } from './components/ContactPage';
 import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { GreenVectorAddendumPage } from './components/GreenVectorAddendumPage';
+import { CrownAndCraftsAddendumPage } from './components/CrownAndCraftsAddendumPage';
 import { Toaster } from './components/ui/sonner';
 import type { PageId } from './locales';
 
@@ -17,6 +18,7 @@ const pageToPath: Record<PageId, string> = {
   contact: '/contact',
   privacy: '/privacy-policy',
   privacyGreenVector: '/privacy-policy/green-vector',
+  privacyCrownAndCrafts: '/privacy-policy/crown-and-crafts',
 };
 
 const pathToPage = Object.entries(pageToPath).reduce<Record<string, PageId>>((acc, [page, path]) => {
@@ -77,6 +79,8 @@ export default function App() {
         return <PrivacyPolicyPage />;
       case 'privacyGreenVector':
         return <GreenVectorAddendumPage />;
+      case 'privacyCrownAndCrafts':
+        return <CrownAndCraftsAddendumPage />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }

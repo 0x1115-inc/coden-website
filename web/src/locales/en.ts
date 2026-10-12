@@ -1,6 +1,7 @@
 import type { LocaleContent } from "./types";
 import { masterPrivacyPolicyEnHtml } from "../content/privacy/masterPrivacyPolicyEn";
 import { greenVectorAddendumEnHtml } from "../content/privacy/greenVectorAddendumEn";
+import { crownAndCraftsAddendumEnHtml } from "../content/privacy/crownAndCraftsAddendumEn";
 
 export const en: LocaleContent = {
   meta: {
@@ -287,6 +288,14 @@ export const en: LocaleContent = {
       introduction:
         "This Green Vector App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Green Vector mobile application (“App”). By using the Green Vector App, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the App.",
       bodyHtml: greenVectorAddendumEnHtml,
+    },
+    crownAndCrafts: {
+      title: "Crown & Crafts App Privacy Addendum",
+      lastUpdatedLabel: "Last updated",
+      lastUpdatedDate: "2026-10-12",
+      introduction:
+        "This Crown & Crafts App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Crown & Crafts game (“Game”) on iOS, Android and web game portals. By playing Crown & Crafts, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.",
+      bodyHtml: crownAndCraftsAddendumEnHtml,
     },
   },
 };

@@ -25,6 +25,11 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     if (typeof window === "undefined") {
       return defaultLocaleId;
     }
+    // ?lang=en|vi in the URL wins (store listings link policy pages in English), then the saved choice, then the default.
+    const requested = new URLSearchParams(window.location.search).get("lang") as LocaleId | null;
+    if (requested && requested in availableLocales) {
+      return requested;
+    }
     const stored = window.localStorage.getItem(STORAGE_KEY) as LocaleId | null;
     return stored && stored in availableLocales ? stored : defaultLocaleId;
   });

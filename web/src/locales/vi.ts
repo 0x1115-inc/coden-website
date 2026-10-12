@@ -1,6 +1,7 @@
 import type { LocaleContent } from "./types";
 import { masterPrivacyPolicyViHtml } from "../content/privacy/masterPrivacyPolicyVi";
 import { greenVectorAddendumViHtml } from "../content/privacy/greenVectorAddendumVi";
+import { crownAndCraftsAddendumViHtml } from "../content/privacy/crownAndCraftsAddendumVi";
 
 export const vi: LocaleContent = {
   meta: {
@@ -291,6 +292,14 @@ export const vi: LocaleContent = {
       introduction:
         "Phụ lục Quyền riêng tư Ứng dụng Green Vector này (“Phụ lục”) bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden (“Chính sách Chung”) và áp dụng cụ thể cho ứng dụng di động Green Vector (“Ứng dụng”). Bằng việc sử dụng Ứng dụng Green Vector, bạn đồng ý với Phụ lục này và Chính sách Tổng thể. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này sẽ được ưu tiên áp dụng cho các vấn đề liên quan đến Ứng dụng.",
       bodyHtml: greenVectorAddendumViHtml,
+    },
+    crownAndCrafts: {
+      title: "Phụ lục Quyền riêng tư Ứng dụng Crown & Crafts",
+      lastUpdatedLabel: "Cập nhật lần cuối",
+      lastUpdatedDate: "12-10-2026",
+      introduction:
+        "Phụ lục Quyền riêng tư Ứng dụng Crown & Crafts này (“Phụ lục”) bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden (“Chính sách Chung”) và áp dụng cụ thể cho trò chơi Crown & Crafts (“Trò chơi”) trên iOS, Android và các cổng game trên web. Bằng việc chơi Crown & Crafts, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.",
+      bodyHtml: crownAndCraftsAddendumViHtml,
     },
   },
 };

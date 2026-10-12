@@ -1,5 +1,12 @@
 export type LocaleId = "vi" | "en";
-export type PageId = "home" | "about" | "works" | "contact" | "privacy" | "privacyGreenVector";
+export type PageId =
+  | "home"
+  | "about"
+  | "works"
+  | "contact"
+  | "privacy"
+  | "privacyGreenVector"
+  | "privacyCrownAndCrafts";
 export type HeaderNavigationItem =
   | { label: string; target: PageId; href?: never }
   | { label: string; href: string; target?: never };
@@ -15,6 +22,14 @@ export type WorksServiceKey =
 export type ValueIconKey = "efficiency" | "integrity" | "empathy" | "sustainability";
 export type ContactInfoIconKey = "email" | "phone" | "office";
 export type TeamImageKey = "thanh" | "duc" | "cuong" | "minh" | "duchm" | "khanhbd" | "binhnt";
+
+export interface PolicyContent {
+  title: string;
+  lastUpdatedLabel: string;
+  lastUpdatedDate: string;
+  introduction: string;
+  bodyHtml: string;
+}
 
 export interface LocaleContent {
   meta: {
@@ -138,12 +153,7 @@ export interface LocaleContent {
     bodyHtml: string;
   };
   privacyAddendums: {
-    greenVector: {
-      title: string;
-      lastUpdatedLabel: string;
-      lastUpdatedDate: string;
-      introduction: string;
-      bodyHtml: string;
-    };
+    greenVector: PolicyContent;
+    crownAndCrafts: PolicyContent;
   };
 }
