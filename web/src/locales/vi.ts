@@ -264,7 +264,7 @@ export const vi: LocaleContent = {
     crownAndCrafts: {
       title: "Phụ lục Quyền riêng tư Ứng dụng Crown & Crafts",
       lastUpdatedLabel: "Cập nhật lần cuối",
-      lastUpdatedDate: "12-10-2026",
+      lastUpdatedDate: "13-10-2026",
       introduction:
         "Phụ lục Quyền riêng tư Ứng dụng Crown & Crafts này (“Phụ lục”) bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden (“Chính sách Chung”) và áp dụng cụ thể cho trò chơi Crown & Crafts (“Trò chơi”) trên iOS, Android và các cổng game trên web. Bằng việc chơi Crown & Crafts, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.",
       bodyHtml: crownAndCraftsAddendumViHtml,
