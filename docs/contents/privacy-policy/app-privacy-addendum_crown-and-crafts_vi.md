@@ -1,7 +1,7 @@
 # **Phụ lục về Quyền riêng tư của Ứng dụng**
 
 **Bổ sung cho Chính sách Quyền riêng tư Tổng thể của CÔNG TY TNHH CODEN**  
-*Cập nhật lần cuối: 13-10-2026*  
+*Cập nhật lần cuối: 14-10-2026*  
 Phụ lục Quyền riêng tư Ứng dụng Crown & Crafts này (“Phụ lục”) bổ sung cho **Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden** (“Chính sách Chung”) và áp dụng cụ thể cho **trò chơi Crown & Crafts** (“Trò chơi”) trên iOS, Android và các cổng game trên web.  
 Bằng việc chơi Crown & Crafts, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.
 
@@ -22,6 +22,7 @@ Dữ liệu Trò chơi thu thập tuỳ theo phiên bản bạn chơi:
 | Android 1.0 (Google Play) | Không | Google Analytics for Firebase | Không | Không |
 | Các phiên bản iOS, Android sau này có quảng cáo và gói mua | Google AdMob | Google Analytics for Firebase | Remove Ads, Royal Pass | Không |
 | Web (CrazyGames) | CrazyGames | Thống kê chơi ẩn danh gửi về CODEN | Không | Chỉ khi bạn tự gửi |
+| Roadkeep (Trò chơi trong ứng dụng VEANIX) | Không | Chỉ báo cáo khi bị tắt ngang (mục G) | Không | Chỉ khi bạn tự gửi |
 
 Mục 3 mô tả từng loại dữ liệu. Mỗi phần chỉ áp dụng cho các phiên bản có tính năng đó.
 
@@ -71,13 +72,14 @@ Giao dịch mua trong ứng dụng do Apple (App Store) hoặc Google (Google Pl
 
 Trên các cổng game như CrazyGames, cổng game vận hành trang web, quảng cáo, tài khoản người dùng và dữ liệu lưu theo chính sách quyền riêng tư của họ ([Chính sách Quyền riêng tư của CrazyGames](https://www.crazygames.com/privacy-policy)). CODEN không nhận thông tin tài khoản cổng game của bạn. Phiên bản web không dùng AdMob hay Firebase. Phiên bản web gửi về CODEN thống kê chơi ẩn danh (mục G) và, chỉ khi bạn tự gửi, báo lỗi.
 
-### **G. Thống kê chơi ẩn danh (phiên bản web)**
+### **G. Thống kê chơi ẩn danh (phiên bản web và Roadkeep)**
 
-Phiên bản web của Trò chơi gửi về CODEN các báo cáo ngắn về cách Trò chơi được chơi, để chúng tôi biết người chơi gặp khó ở đâu và cải thiện Trò chơi. Trò chơi hiện thông báo về việc này ở lần mở đầu tiên. Mỗi báo cáo gồm:
+Phiên bản web của Trò chơi gửi về CODEN các báo cáo ngắn về cách Trò chơi được chơi và chạy, để chúng tôi biết người chơi gặp khó ở đâu và sửa lỗi. Phiên bản web hiện thông báo về việc này ở lần mở đầu tiên. Roadkeep, phiên bản của Trò chơi trong ứng dụng VEANIX, chỉ gửi báo cáo khi trò chơi bị tắt ngang, nêu ở mục cuối bên dưới. Mỗi báo cáo gồm:
 
 - Mã ngẫu nhiên của bản cài đặt do Trò chơi tạo (mục A), không gắn với tên, email hay tài khoản cổng game của bạn.
 - Phiên bản trò chơi, cổng game bạn đang chơi (ví dụ CrazyGames) và trang web đã dẫn tới Trò chơi, nếu có.
-- Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình.
+- Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng.
+- Nếu Trò chơi bị tắt ngang (ví dụ thiết bị hết bộ nhớ), lần mở sau sẽ báo trạng thái ngay trước đó: màn đang chơi, tốc độ trò chơi, thời gian đã chạy, bộ nhớ đang dùng, loại thiết bị (điện thoại hay máy tính), trò chơi có đang chạy nền không, và thông báo lỗi script gần nhất.
 
 Thống kê được gửi theo từng lô nhỏ về máy chủ của chúng tôi. Như với báo lỗi, máy chủ cũng nhận địa chỉ IP kèm mỗi yêu cầu; địa chỉ này chỉ nằm trong nhật ký máy chủ (mục 7). Thống kê chỉ dùng để hiểu và cải thiện Trò chơi, không bao giờ dùng cho quảng cáo.
 
@@ -115,7 +117,7 @@ CODEN chỉ làm việc với các dịch vụ bảo vệ dữ liệu của bạ
 | --- | --- |
 | Dữ liệu trò chơi trên thiết bị | Tới khi bạn gỡ Trò chơi hoặc xoá dữ liệu trang web |
 | Báo lỗi | Tối đa 12 tháng, sau đó bị xoá |
-| Thống kê chơi (phiên bản web) | Tối đa 12 tháng, sau đó bị xoá |
+| Thống kê chơi (phiên bản web, Roadkeep) | Tối đa 12 tháng, sau đó bị xoá |
 | Nhật ký máy chủ có địa chỉ IP | 14 ngày |
 | Google Analytics for Firebase | Tối đa 14 tháng |
 | Dữ liệu quảng cáo | Theo chính sách của Google |
@@ -124,7 +126,7 @@ CODEN chỉ làm việc với các dịch vụ bảo vệ dữ liệu của bạ
 
 - **Quảng cáo:** đổi lựa chọn ở mục Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư & Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo.
 - **Dữ liệu trò chơi:** gỡ Trò chơi hoặc xoá dữ liệu trang web.
-- **Thống kê chơi:** chỉ gắn với mã ngẫu nhiên của bản cài đặt trong trình duyệt. Xoá dữ liệu trang web thì Trò chơi tạo mã mới, thống kê sau đó không còn nối với thống kê trước.
+- **Thống kê chơi:** chỉ gắn với mã ngẫu nhiên của bản cài đặt trong trình duyệt hoặc ứng dụng. Xoá dữ liệu trang web thì Trò chơi tạo mã mới, thống kê sau đó không còn nối với thống kê trước.
 - **Báo lỗi:** để xem hoặc xoá một báo lỗi, gửi email tới legal@coden.org kèm tên trò chơi và mã báo lỗi hiện ra sau khi bạn gửi. Chúng tôi trả lời trong vòng 30 ngày.
 - Tuỳ nơi bạn sống (ví dụ EEA, Vương quốc Anh hay California), bạn có thể có quyền truy cập, sửa, xoá hoặc nhận bản sao dữ liệu của mình, phản đối hoặc hạn chế việc xử lý, và khiếu nại với cơ quan bảo vệ dữ liệu.
 - **California:** CODEN không bán thông tin cá nhân. Theo luật California, quảng cáo cá nhân hoá có thể được coi là “chia sẻ”. Bạn có thể từ chối bằng các lựa chọn quảng cáo ở trên.
