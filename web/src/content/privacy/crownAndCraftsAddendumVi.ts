@@ -60,7 +60,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
 <ul>
   <li>Mã ngẫu nhiên của bản cài đặt do Trò chơi tạo (mục A), không gắn với tên, email hay tài khoản cổng game của bạn.</li>
   <li>Phiên bản trò chơi, cổng game bạn đang chơi (ví dụ CrazyGames) và trang web đã dẫn tới Trò chơi, nếu có.</li>
-  <li>Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng.</li>
+  <li>Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng, và bạn có phải người mới chơi không (có ván lưu hay tiến trình từ trước hay không), để việc tải lại trang không bị đếm thành người chơi mới.</li>
   <li>Nếu Trò chơi bị tắt ngang (ví dụ thiết bị hết bộ nhớ), lần mở sau sẽ báo trạng thái ngay trước đó: màn đang chơi, tốc độ trò chơi, thời gian đã chạy, bộ nhớ đang dùng, loại thiết bị (điện thoại hay máy tính), trò chơi có đang chạy nền không, và thông báo lỗi script gần nhất.</li>
 </ul>
 <p>Thống kê được gửi theo từng lô nhỏ về máy chủ của chúng tôi. Như với báo lỗi, máy chủ cũng nhận địa chỉ IP kèm mỗi yêu cầu; địa chỉ này chỉ nằm trong nhật ký máy chủ (mục 7). Thống kê chỉ dùng để hiểu và cải thiện Trò chơi, không bao giờ dùng cho quảng cáo.</p>

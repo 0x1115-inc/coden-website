@@ -61,7 +61,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 <ul>
   <li>The random installation ID created by the Game (section A). It is not linked to your name, email or portal account.</li>
   <li>The game version, the portal you play on (for example CrazyGames) and the website that linked to the Game, if any.</li>
-  <li>Game events and their time: the game started, tutorial steps, missions started and finished, first road and building, saves, raids, frame rate and memory use.</li>
+  <li>Game events and their time: the game started, tutorial steps, missions started and finished, first road and building, saves, raids, frame rate and memory use, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.</li>
   <li>If the Game closed unexpectedly (for example when the device ran out of memory), the next time it starts it reports the state just before: the mission, game speed, how long it ran, memory use, whether it ran on a phone or a computer, whether it was in the background, and the last script error message.</li>
 </ul>
 <p>Statistics are sent in small batches to our server. As with bug reports, the server also receives your IP address with each request; it is kept only in server logs (section 7). The statistics are used only to understand and improve the Game, never for advertising.</p>
