@@ -1,7 +1,7 @@
 export const crownAndCraftsAddendumViHtml = String.raw`
 <h1><strong>Phụ lục về Quyền riêng tư của Ứng dụng</strong></h1>
 <p><strong>Bổ sung cho Chính sách Quyền riêng tư Tổng thể của CÔNG TY TNHH CODEN</strong><br />
-<em>Cập nhật lần cuối: 12-10-2026</em><br />
+<em>Cập nhật lần cuối: 14-10-2026</em><br />
 Phụ lục Quyền riêng tư Ứng dụng Crown &amp; Crafts này (“Phụ lục”) bổ sung cho <strong>Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden</strong> (“Chính sách Chung”) và áp dụng cụ thể cho <strong>trò chơi Crown &amp; Crafts</strong> (“Trò chơi”) trên iOS, Android và các cổng game trên web.<br />
 Bằng việc chơi Crown &amp; Crafts, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.</p>
 <h2><strong>1 - Giới thiệu về Crown &amp; Crafts</strong></h2>
@@ -17,7 +17,8 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
     <tr><td>iOS 1.0 (App Store)</td><td>Không</td><td>Không</td><td>Không</td><td>Không</td></tr>
     <tr><td>Android 1.0 (Google Play)</td><td>Không</td><td>Google Analytics for Firebase</td><td>Không</td><td>Không</td></tr>
     <tr><td>Các phiên bản iOS, Android sau này có quảng cáo và gói mua</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>Không</td></tr>
-    <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Không</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
+    <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Thống kê chơi ẩn danh gửi về CODEN</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
+    <tr><td>Roadkeep (Trò chơi trong ứng dụng VEANIX)</td><td>Không</td><td>Chỉ báo cáo khi bị tắt ngang (mục G)</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
   </tbody>
 </table></div>
 <p>Mục 3 mô tả từng loại dữ liệu. Mỗi phần chỉ áp dụng cho các phiên bản có tính năng đó.</p>
@@ -53,7 +54,16 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
 <h3><strong>E. Mua trong ứng dụng</strong></h3>
 <p>Giao dịch mua trong ứng dụng do Apple (App Store) hoặc Google (Google Play) xử lý. CODEN không bao giờ thấy thông tin thẻ hay thanh toán của bạn. Chúng tôi chỉ nhận xác nhận bạn sở hữu vật phẩm nào, để Trò chơi mở khoá và khôi phục vật phẩm đó trên thiết bị mới.</p>
 <h3><strong>F. Cổng game trên web</strong></h3>
-<p>Trên các cổng game như CrazyGames, cổng game vận hành trang web, quảng cáo, tài khoản người dùng và dữ liệu lưu theo chính sách quyền riêng tư của họ (<a href="https://www.crazygames.com/privacy-policy">Chính sách Quyền riêng tư của CrazyGames</a>). CODEN không nhận thông tin tài khoản cổng game của bạn. Phiên bản web không dùng AdMob hay Firebase, và chỉ gửi dữ liệu về CODEN khi bạn gửi báo lỗi.</p>
+<p>Trên các cổng game như CrazyGames, cổng game vận hành trang web, quảng cáo, tài khoản người dùng và dữ liệu lưu theo chính sách quyền riêng tư của họ (<a href="https://www.crazygames.com/privacy-policy">Chính sách Quyền riêng tư của CrazyGames</a>). CODEN không nhận thông tin tài khoản cổng game của bạn. Phiên bản web không dùng AdMob hay Firebase. Phiên bản web gửi về CODEN thống kê chơi ẩn danh (mục G) và, chỉ khi bạn tự gửi, báo lỗi.</p>
+<h3><strong>G. Thống kê chơi ẩn danh (phiên bản web và Roadkeep)</strong></h3>
+<p>Phiên bản web của Trò chơi gửi về CODEN các báo cáo ngắn về cách Trò chơi được chơi và chạy, để chúng tôi biết người chơi gặp khó ở đâu và sửa lỗi. Phiên bản web hiện thông báo về việc này ở lần mở đầu tiên. Roadkeep, phiên bản của Trò chơi trong ứng dụng VEANIX, chỉ gửi báo cáo khi trò chơi bị tắt ngang, nêu ở mục cuối bên dưới. Mỗi báo cáo gồm:</p>
+<ul>
+  <li>Mã ngẫu nhiên của bản cài đặt do Trò chơi tạo (mục A), không gắn với tên, email hay tài khoản cổng game của bạn.</li>
+  <li>Phiên bản trò chơi, cổng game bạn đang chơi (ví dụ CrazyGames) và trang web đã dẫn tới Trò chơi, nếu có.</li>
+  <li>Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng, và bạn có phải người mới chơi không (có ván lưu hay tiến trình từ trước hay không), để việc tải lại trang không bị đếm thành người chơi mới.</li>
+  <li>Nếu Trò chơi bị tắt ngang (ví dụ thiết bị hết bộ nhớ), lần mở sau sẽ báo trạng thái ngay trước đó: màn đang chơi, tốc độ trò chơi, thời gian đã chạy, bộ nhớ đang dùng, loại thiết bị (điện thoại hay máy tính), trò chơi có đang chạy nền không, và thông báo lỗi script gần nhất.</li>
+</ul>
+<p>Thống kê được gửi theo từng lô nhỏ về máy chủ của chúng tôi. Như với báo lỗi, máy chủ cũng nhận địa chỉ IP kèm mỗi yêu cầu; địa chỉ này chỉ nằm trong nhật ký máy chủ (mục 7). Thống kê chỉ dùng để hiểu và cải thiện Trò chơi, không bao giờ dùng cho quảng cáo.</p>
 <h2><strong>4 - Cách sử dụng thông tin</strong></h2>
 <ul>
   <li>Vận hành Trò chơi, giữ tiến trình chơi và vật phẩm đã mua.</li>
@@ -77,7 +87,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
     <tr><td>Google Play</td><td>Phân phối ứng dụng, mua trong ứng dụng</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
     <tr><td>CrazyGames</td><td>Vận hành phiên bản web</td><td><a href="https://www.crazygames.com/privacy-policy">Chính sách Quyền riêng tư của CrazyGames</a></td></tr>
     <tr><td>Telegram</td><td>Kênh riêng để đội ngũ xem xét báo lỗi</td><td><a href="https://telegram.org/privacy">Chính sách Quyền riêng tư của Telegram</a></td></tr>
-    <tr><td>CMC Telecom (Việt Nam)</td><td>Máy chủ nhận và lưu báo lỗi</td><td>-</td></tr>
+    <tr><td>CMC Telecom (Việt Nam)</td><td>Máy chủ nhận và lưu báo lỗi, thống kê chơi</td><td>-</td></tr>
   </tbody>
 </table></div>
 <p>CODEN chỉ làm việc với các dịch vụ bảo vệ dữ liệu của bạn ít nhất ở mức Phụ lục này mô tả. Chúng tôi cũng có thể tiết lộ thông tin khi pháp luật yêu cầu.</p>
@@ -87,6 +97,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
   <tbody>
     <tr><td>Dữ liệu trò chơi trên thiết bị</td><td>Tới khi bạn gỡ Trò chơi hoặc xoá dữ liệu trang web</td></tr>
     <tr><td>Báo lỗi</td><td>Tối đa 12 tháng, sau đó bị xoá</td></tr>
+    <tr><td>Thống kê chơi (phiên bản web, Roadkeep)</td><td>Tối đa 12 tháng, sau đó bị xoá</td></tr>
     <tr><td>Nhật ký máy chủ có địa chỉ IP</td><td>14 ngày</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Tối đa 14 tháng</td></tr>
     <tr><td>Dữ liệu quảng cáo</td><td>Theo chính sách của Google</td></tr>
@@ -96,6 +107,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
 <ul>
   <li><strong>Quảng cáo:</strong> đổi lựa chọn ở mục Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo.</li>
   <li><strong>Dữ liệu trò chơi:</strong> gỡ Trò chơi hoặc xoá dữ liệu trang web.</li>
+  <li><strong>Thống kê chơi:</strong> chỉ gắn với mã ngẫu nhiên của bản cài đặt trong trình duyệt hoặc ứng dụng. Xoá dữ liệu trang web thì Trò chơi tạo mã mới, thống kê sau đó không còn nối với thống kê trước.</li>
   <li><strong>Báo lỗi:</strong> để xem hoặc xoá một báo lỗi, gửi email tới legal@coden.org kèm tên trò chơi và mã báo lỗi hiện ra sau khi bạn gửi. Chúng tôi trả lời trong vòng 30 ngày.</li>
   <li>Tuỳ nơi bạn sống (ví dụ EEA, Vương quốc Anh hay California), bạn có thể có quyền truy cập, sửa, xoá hoặc nhận bản sao dữ liệu của mình, phản đối hoặc hạn chế việc xử lý, và khiếu nại với cơ quan bảo vệ dữ liệu.</li>
   <li><strong>California:</strong> CODEN không bán thông tin cá nhân. Theo luật California, quảng cáo cá nhân hoá có thể được coi là “chia sẻ”. Bạn có thể từ chối bằng các lựa chọn quảng cáo ở trên.</li>
@@ -108,7 +120,7 @@ Nếu bạn cho rằng một trẻ em đã gửi thông tin cho chúng tôi, hã
 <p>Dữ liệu gửi tới máy chủ của chúng tôi được mã hoá khi truyền (HTTPS). Chỉ đội ngũ của chúng tôi truy cập được báo lỗi.<br />
 Dù chúng tôi áp dụng các biện pháp bảo vệ hợp lý, không có hệ thống nào an toàn tuyệt đối.</p>
 <h2><strong>11 - Chuyển dữ liệu quốc tế</strong></h2>
-<p>Google và các dịch vụ nêu trên có thể xử lý dữ liệu bên ngoài quốc gia của bạn, kể cả tại Hoa Kỳ. Báo lỗi được xử lý và lưu tại Việt Nam.</p>
+<p>Google và các dịch vụ nêu trên có thể xử lý dữ liệu bên ngoài quốc gia của bạn, kể cả tại Hoa Kỳ. Báo lỗi và thống kê chơi được xử lý và lưu tại Việt Nam.</p>
 <h2><strong>12 - Thay đổi Phụ lục</strong></h2>
 <p>Chúng tôi cập nhật Phụ lục này khi Trò chơi hoặc các dịch vụ Trò chơi sử dụng thay đổi, trước khi phát hành phiên bản có thay đổi đó.<br />
 Ngày “Cập nhật lần cuối” sẽ được sửa cho phù hợp.<br />

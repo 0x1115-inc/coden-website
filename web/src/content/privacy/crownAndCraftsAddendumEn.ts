@@ -1,7 +1,7 @@
 export const crownAndCraftsAddendumEnHtml = String.raw`
 <h1><strong>App Privacy Addendum</strong></h1>
 <p><strong>Supplement to the Master Privacy Policy of CODEN COMPANY LIMITED</strong><br />
-<em>Last updated: 2026-10-12</em><br />
+<em>Last updated: 2026-10-14</em><br />
 This Crown &amp; Crafts App Privacy Addendum (“Addendum”) supplements the <strong>Master Privacy Policy of CODEN COMPANY LIMITED</strong> (“Master Policy”) and applies specifically to the <strong>Crown &amp; Crafts game</strong> (“Game”) on iOS, Android and web game portals.<br />
 By playing Crown &amp; Crafts, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.</p>
 <h2><strong>1 - About Crown &amp; Crafts</strong></h2>
@@ -18,7 +18,8 @@ For general privacy practices, please refer to the Master Privacy Policy availab
     <tr><td>iOS 1.0 (App Store)</td><td>None</td><td>None</td><td>None</td><td>No</td></tr>
     <tr><td>Android 1.0 (Google Play)</td><td>None</td><td>Google Analytics for Firebase</td><td>None</td><td>No</td></tr>
     <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>No</td></tr>
-    <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>None</td><td>None</td><td>Only if you send one</td></tr>
+    <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Anonymous gameplay statistics sent to CODEN</td><td>None</td><td>Only if you send one</td></tr>
+    <tr><td>Roadkeep (the Game in the VEANIX app)</td><td>None</td><td>Reports of unexpected closes only (section G)</td><td>None</td><td>Only if you send one</td></tr>
   </tbody>
 </table></div>
 <p>Section 3 describes each kind of data. A section applies only to the versions that include that feature.</p>
@@ -54,7 +55,16 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 <h3><strong>E. In-app purchases</strong></h3>
 <p>In-app purchases are processed by Apple (App Store) or Google (Google Play). CODEN never sees your card or payment details. We receive only a confirmation of which items you own, so the Game can unlock them and restore them on a new device.</p>
 <h3><strong>F. Web game portals</strong></h3>
-<p>On portals such as CrazyGames, the portal runs the website, its ads, its user accounts and its saves under its own privacy policy (<a href="https://www.crazygames.com/privacy-policy">CrazyGames Privacy Policy</a>). CODEN does not receive your portal account details. Web versions do not use AdMob or Firebase, and send data to CODEN only when you send a bug report.</p>
+<p>On portals such as CrazyGames, the portal runs the website, its ads, its user accounts and its saves under its own privacy policy (<a href="https://www.crazygames.com/privacy-policy">CrazyGames Privacy Policy</a>). CODEN does not receive your portal account details. Web versions do not use AdMob or Firebase. They send CODEN anonymous gameplay statistics (section G) and, only if you send one, a bug report.</p>
+<h3><strong>G. Anonymous gameplay statistics (web versions and Roadkeep)</strong></h3>
+<p>Web versions of the Game send CODEN short reports about how the Game is played and how well it runs, so we can see where players get stuck and fix problems. Web versions show a notice about this the first time they start. Roadkeep, the version of the Game in the VEANIX app, sends only the reports of unexpected closes described in the last item below. Each report contains:</p>
+<ul>
+  <li>The random installation ID created by the Game (section A). It is not linked to your name, email or portal account.</li>
+  <li>The game version, the portal you play on (for example CrazyGames) and the website that linked to the Game, if any.</li>
+  <li>Game events and their time: the game started, tutorial steps, missions started and finished, first road and building, saves, raids, frame rate and memory use, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.</li>
+  <li>If the Game closed unexpectedly (for example when the device ran out of memory), the next time it starts it reports the state just before: the mission, game speed, how long it ran, memory use, whether it ran on a phone or a computer, whether it was in the background, and the last script error message.</li>
+</ul>
+<p>Statistics are sent in small batches to our server. As with bug reports, the server also receives your IP address with each request; it is kept only in server logs (section 7). The statistics are used only to understand and improve the Game, never for advertising.</p>
 <h2><strong>4 - How we use information</strong></h2>
 <ul>
   <li>To run the Game and keep your progress and purchases.</li>
@@ -78,7 +88,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
     <tr><td>Google Play</td><td>App distribution, purchases</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
     <tr><td>CrazyGames</td><td>Running the web versions</td><td><a href="https://www.crazygames.com/privacy-policy">CrazyGames Privacy Policy</a></td></tr>
     <tr><td>Telegram</td><td>Private channel where our team reviews bug reports</td><td><a href="https://telegram.org/privacy">Telegram Privacy Policy</a></td></tr>
-    <tr><td>CMC Telecom (Vietnam)</td><td>Hosting for the server that receives and stores bug reports</td><td>-</td></tr>
+    <tr><td>CMC Telecom (Vietnam)</td><td>Hosting for the server that receives and stores bug reports and gameplay statistics</td><td>-</td></tr>
   </tbody>
 </table></div>
 <p>CODEN only works with services that protect your data at least as well as this Addendum describes. We may also disclose information when the law requires it.</p>
@@ -88,6 +98,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
   <tbody>
     <tr><td>Game data on your device</td><td>Until you uninstall the Game or clear site data</td></tr>
     <tr><td>Bug reports</td><td>Up to 12 months, then deleted</td></tr>
+    <tr><td>Gameplay statistics (web versions, Roadkeep)</td><td>Up to 12 months, then deleted</td></tr>
     <tr><td>Server logs with IP addresses</td><td>14 days</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Up to 14 months</td></tr>
     <tr><td>Advertising data</td><td>As set out in Google’s policies</td></tr>
@@ -97,6 +108,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 <ul>
   <li><strong>Ads:</strong> change your consent under Privacy settings in the Game’s Settings menu. On iOS, go to Settings › Privacy &amp; Security › Tracking. On Android, reset or delete your advertising ID.</li>
   <li><strong>Game data:</strong> uninstall the Game or clear the site data.</li>
+  <li><strong>Gameplay statistics:</strong> they are linked only to the random installation ID in your browser or app. Clearing the site data gives the Game a new ID, so later statistics are no longer linked to earlier ones.</li>
   <li><strong>Bug reports:</strong> to see or delete a report, email legal@coden.org with the game name and the report code shown after you sent it. We reply within 30 days.</li>
   <li>Depending on where you live (for example the EEA, the UK or California), you may have the right to access, correct, delete or receive a copy of your data, to object to or restrict its use, and to complain to your data protection authority.</li>
   <li><strong>California:</strong> CODEN does not sell personal information. Personalized ads may count as “sharing” under California law. You can opt out with the ad choices above.</li>
@@ -109,7 +121,7 @@ If you believe a child has sent us information, contact us and we will delete it
 <p>Data sent to our server is encrypted in transit (HTTPS). Only our team can access bug reports.<br />
 While we implement commercially reasonable safeguards, no system can be fully secure.</p>
 <h2><strong>11 - International data transfers</strong></h2>
-<p>Google and the other services above may process data outside your country, including in the United States. Bug reports are processed and stored in Vietnam.</p>
+<p>Google and the other services above may process data outside your country, including in the United States. Bug reports and gameplay statistics are processed and stored in Vietnam.</p>
 <h2><strong>12 - Changes to this Addendum</strong></h2>
 <p>We update this Addendum when the Game or the services it uses change, before the version with that change is released.<br />
 The “Last updated” date will be revised to reflect amendments.<br />
