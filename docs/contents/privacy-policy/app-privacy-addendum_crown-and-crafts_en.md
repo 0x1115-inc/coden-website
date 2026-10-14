@@ -23,7 +23,6 @@ What the Game collects depends on the version you play:
 | Android 1.0 (Google Play) | None | Google Analytics for Firebase | None | No |
 | Later iOS and Android versions with ads and purchases | Google AdMob | Google Analytics for Firebase | Remove Ads, Royal Pass | No |
 | Web (CrazyGames) | CrazyGames | Anonymous gameplay statistics sent to CODEN | None | Only if you send one |
-| Roadkeep (the Game in the VEANIX app) | None | Reports of unexpected closes only (section G) | None | Only if you send one |
 
 Section 3 describes each kind of data. A section applies only to the versions that include that feature.
 
@@ -73,13 +72,13 @@ In-app purchases are processed by Apple (App Store) or Google (Google Play). COD
 
 On portals such as CrazyGames, the portal runs the website, its ads, its user accounts and its saves under its own privacy policy ([CrazyGames Privacy Policy](https://www.crazygames.com/privacy-policy)). CODEN does not receive your portal account details. Web versions do not use AdMob or Firebase. They send CODEN anonymous gameplay statistics (section G) and, only if you send one, a bug report.
 
-### **G. Anonymous gameplay statistics (web versions and Roadkeep)**
+### **G. Anonymous gameplay statistics (web versions)**
 
-Web versions of the Game send CODEN short reports about how the Game is played and how well it runs, so we can see where players get stuck and fix problems. Web versions show a notice about this the first time they start. Roadkeep, the version of the Game in the VEANIX app, sends only the reports of unexpected closes described in the last item below. Each report contains:
+Web versions of the Game send CODEN short reports about how the Game is played and how well it runs, so we can see where players get stuck and fix problems. Web versions show a notice about this the first time they start. Each report contains:
 
 - The random installation ID created by the Game (section A). It is not linked to your name, email or portal account.
 - The game version, the portal you play on (for example CrazyGames) and the website that linked to the Game, if any.
-- Game events and their time: the game started, tutorial steps, missions started and finished, first road and building, saves, raids, frame rate and memory use, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.
+- Game events and their time, for example: the game started and how long it took to load, tutorial steps, missions started and finished, contracts taken, tips shown, first road and building, saves, raids, frame rate and memory use, whether you play on a phone or a computer, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.
 - If the Game closed unexpectedly (for example when the device ran out of memory), the next time it starts it reports the state just before: the mission, game speed, how long it ran, memory use, whether it ran on a phone or a computer, whether it was in the background, and the last script error message.
 
 Statistics are sent in small batches to our server. As with bug reports, the server also receives your IP address with each request; it is kept only in server logs (section 7). The statistics are used only to understand and improve the Game, never for advertising.
@@ -118,7 +117,7 @@ CODEN only works with services that protect your data at least as well as this A
 | --- | --- |
 | Game data on your device | Until you uninstall the Game or clear site data |
 | Bug reports | Up to 12 months, then deleted |
-| Gameplay statistics (web versions, Roadkeep) | Up to 12 months, then deleted |
+| Gameplay statistics (web versions) | Up to 12 months, then deleted |
 | Server logs with IP addresses | 14 days |
 | Google Analytics for Firebase | Up to 14 months |
 | Advertising data | As set out in Google’s policies |
