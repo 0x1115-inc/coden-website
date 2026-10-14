@@ -18,7 +18,6 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
     <tr><td>Android 1.0 (Google Play)</td><td>Không</td><td>Google Analytics for Firebase</td><td>Không</td><td>Không</td></tr>
     <tr><td>Các phiên bản iOS, Android sau này có quảng cáo và gói mua</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>Không</td></tr>
     <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Thống kê chơi ẩn danh gửi về CODEN</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
-    <tr><td>Roadkeep (Trò chơi trong ứng dụng VEANIX)</td><td>Không</td><td>Chỉ báo cáo khi bị tắt ngang (mục G)</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
   </tbody>
 </table></div>
 <p>Mục 3 mô tả từng loại dữ liệu. Mỗi phần chỉ áp dụng cho các phiên bản có tính năng đó.</p>
@@ -55,12 +54,12 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
 <p>Giao dịch mua trong ứng dụng do Apple (App Store) hoặc Google (Google Play) xử lý. CODEN không bao giờ thấy thông tin thẻ hay thanh toán của bạn. Chúng tôi chỉ nhận xác nhận bạn sở hữu vật phẩm nào, để Trò chơi mở khoá và khôi phục vật phẩm đó trên thiết bị mới.</p>
 <h3><strong>F. Cổng game trên web</strong></h3>
 <p>Trên các cổng game như CrazyGames, cổng game vận hành trang web, quảng cáo, tài khoản người dùng và dữ liệu lưu theo chính sách quyền riêng tư của họ (<a href="https://www.crazygames.com/privacy-policy">Chính sách Quyền riêng tư của CrazyGames</a>). CODEN không nhận thông tin tài khoản cổng game của bạn. Phiên bản web không dùng AdMob hay Firebase. Phiên bản web gửi về CODEN thống kê chơi ẩn danh (mục G) và, chỉ khi bạn tự gửi, báo lỗi.</p>
-<h3><strong>G. Thống kê chơi ẩn danh (phiên bản web và Roadkeep)</strong></h3>
-<p>Phiên bản web của Trò chơi gửi về CODEN các báo cáo ngắn về cách Trò chơi được chơi và chạy, để chúng tôi biết người chơi gặp khó ở đâu và sửa lỗi. Phiên bản web hiện thông báo về việc này ở lần mở đầu tiên. Roadkeep, phiên bản của Trò chơi trong ứng dụng VEANIX, chỉ gửi báo cáo khi trò chơi bị tắt ngang, nêu ở mục cuối bên dưới. Mỗi báo cáo gồm:</p>
+<h3><strong>G. Thống kê chơi ẩn danh (phiên bản web)</strong></h3>
+<p>Phiên bản web của Trò chơi gửi về CODEN các báo cáo ngắn về cách Trò chơi được chơi và chạy, để chúng tôi biết người chơi gặp khó ở đâu và sửa lỗi. Phiên bản web hiện thông báo về việc này ở lần mở đầu tiên. Mỗi báo cáo gồm:</p>
 <ul>
   <li>Mã ngẫu nhiên của bản cài đặt do Trò chơi tạo (mục A), không gắn với tên, email hay tài khoản cổng game của bạn.</li>
   <li>Phiên bản trò chơi, cổng game bạn đang chơi (ví dụ CrazyGames) và trang web đã dẫn tới Trò chơi, nếu có.</li>
-  <li>Các sự kiện trong trò chơi và thời điểm: bắt đầu chơi, các bước hướng dẫn, bắt đầu và kết thúc màn, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng, và bạn có phải người mới chơi không (có ván lưu hay tiến trình từ trước hay không), để việc tải lại trang không bị đếm thành người chơi mới.</li>
+  <li>Các sự kiện trong trò chơi và thời điểm, ví dụ: bắt đầu chơi và thời gian tải, các bước hướng dẫn, bắt đầu và kết thúc màn, nhận hợp đồng, gợi ý đã hiện, con đường và công trình đầu tiên, lưu ván, đợt cướp, tốc độ khung hình và bộ nhớ đang dùng, bạn chơi trên điện thoại hay máy tính, và bạn có phải người mới chơi không (có ván lưu hay tiến trình từ trước hay không), để việc tải lại trang không bị đếm thành người chơi mới.</li>
   <li>Nếu Trò chơi bị tắt ngang (ví dụ thiết bị hết bộ nhớ), lần mở sau sẽ báo trạng thái ngay trước đó: màn đang chơi, tốc độ trò chơi, thời gian đã chạy, bộ nhớ đang dùng, loại thiết bị (điện thoại hay máy tính), trò chơi có đang chạy nền không, và thông báo lỗi script gần nhất.</li>
 </ul>
 <p>Thống kê được gửi theo từng lô nhỏ về máy chủ của chúng tôi. Như với báo lỗi, máy chủ cũng nhận địa chỉ IP kèm mỗi yêu cầu; địa chỉ này chỉ nằm trong nhật ký máy chủ (mục 7). Thống kê chỉ dùng để hiểu và cải thiện Trò chơi, không bao giờ dùng cho quảng cáo.</p>
@@ -97,7 +96,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
   <tbody>
     <tr><td>Dữ liệu trò chơi trên thiết bị</td><td>Tới khi bạn gỡ Trò chơi hoặc xoá dữ liệu trang web</td></tr>
     <tr><td>Báo lỗi</td><td>Tối đa 12 tháng, sau đó bị xoá</td></tr>
-    <tr><td>Thống kê chơi (phiên bản web, Roadkeep)</td><td>Tối đa 12 tháng, sau đó bị xoá</td></tr>
+    <tr><td>Thống kê chơi (phiên bản web)</td><td>Tối đa 12 tháng, sau đó bị xoá</td></tr>
     <tr><td>Nhật ký máy chủ có địa chỉ IP</td><td>14 ngày</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Tối đa 14 tháng</td></tr>
     <tr><td>Dữ liệu quảng cáo</td><td>Theo chính sách của Google</td></tr>

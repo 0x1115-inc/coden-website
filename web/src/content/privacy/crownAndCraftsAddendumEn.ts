@@ -19,7 +19,6 @@ For general privacy practices, please refer to the Master Privacy Policy availab
     <tr><td>Android 1.0 (Google Play)</td><td>None</td><td>Google Analytics for Firebase</td><td>None</td><td>No</td></tr>
     <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>No</td></tr>
     <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Anonymous gameplay statistics sent to CODEN</td><td>None</td><td>Only if you send one</td></tr>
-    <tr><td>Roadkeep (the Game in the VEANIX app)</td><td>None</td><td>Reports of unexpected closes only (section G)</td><td>None</td><td>Only if you send one</td></tr>
   </tbody>
 </table></div>
 <p>Section 3 describes each kind of data. A section applies only to the versions that include that feature.</p>
@@ -56,12 +55,12 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 <p>In-app purchases are processed by Apple (App Store) or Google (Google Play). CODEN never sees your card or payment details. We receive only a confirmation of which items you own, so the Game can unlock them and restore them on a new device.</p>
 <h3><strong>F. Web game portals</strong></h3>
 <p>On portals such as CrazyGames, the portal runs the website, its ads, its user accounts and its saves under its own privacy policy (<a href="https://www.crazygames.com/privacy-policy">CrazyGames Privacy Policy</a>). CODEN does not receive your portal account details. Web versions do not use AdMob or Firebase. They send CODEN anonymous gameplay statistics (section G) and, only if you send one, a bug report.</p>
-<h3><strong>G. Anonymous gameplay statistics (web versions and Roadkeep)</strong></h3>
-<p>Web versions of the Game send CODEN short reports about how the Game is played and how well it runs, so we can see where players get stuck and fix problems. Web versions show a notice about this the first time they start. Roadkeep, the version of the Game in the VEANIX app, sends only the reports of unexpected closes described in the last item below. Each report contains:</p>
+<h3><strong>G. Anonymous gameplay statistics (web versions)</strong></h3>
+<p>Web versions of the Game send CODEN short reports about how the Game is played and how well it runs, so we can see where players get stuck and fix problems. Web versions show a notice about this the first time they start. Each report contains:</p>
 <ul>
   <li>The random installation ID created by the Game (section A). It is not linked to your name, email or portal account.</li>
   <li>The game version, the portal you play on (for example CrazyGames) and the website that linked to the Game, if any.</li>
-  <li>Game events and their time: the game started, tutorial steps, missions started and finished, first road and building, saves, raids, frame rate and memory use, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.</li>
+  <li>Game events and their time, for example: the game started and how long it took to load, tutorial steps, missions started and finished, contracts taken, tips shown, first road and building, saves, raids, frame rate and memory use, whether you play on a phone or a computer, and whether you are new to the Game (whether earlier saves or progress exist), so that reloading the page is not counted as a new player.</li>
   <li>If the Game closed unexpectedly (for example when the device ran out of memory), the next time it starts it reports the state just before: the mission, game speed, how long it ran, memory use, whether it ran on a phone or a computer, whether it was in the background, and the last script error message.</li>
 </ul>
 <p>Statistics are sent in small batches to our server. As with bug reports, the server also receives your IP address with each request; it is kept only in server logs (section 7). The statistics are used only to understand and improve the Game, never for advertising.</p>
@@ -98,7 +97,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
   <tbody>
     <tr><td>Game data on your device</td><td>Until you uninstall the Game or clear site data</td></tr>
     <tr><td>Bug reports</td><td>Up to 12 months, then deleted</td></tr>
-    <tr><td>Gameplay statistics (web versions, Roadkeep)</td><td>Up to 12 months, then deleted</td></tr>
+    <tr><td>Gameplay statistics (web versions)</td><td>Up to 12 months, then deleted</td></tr>
     <tr><td>Server logs with IP addresses</td><td>14 days</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Up to 14 months</td></tr>
     <tr><td>Advertising data</td><td>As set out in Google’s policies</td></tr>
