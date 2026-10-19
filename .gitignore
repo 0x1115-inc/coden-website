@@ -97,6 +97,8 @@ dist
 # Gatsby files
 .cache/
 public
+# Vite static files (served at the site root, e.g. /app-ads.txt)
+!/web/public/
 
 # Vuepress build output
 .vuepress/dist
