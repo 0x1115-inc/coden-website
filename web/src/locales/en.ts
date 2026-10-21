@@ -2,6 +2,7 @@ import type { LocaleContent } from "./types";
 import { masterPrivacyPolicyEnHtml } from "../content/privacy/masterPrivacyPolicyEn";
 import { greenVectorAddendumEnHtml } from "../content/privacy/greenVectorAddendumEn";
 import { crownAndCraftsAddendumEnHtml } from "../content/privacy/crownAndCraftsAddendumEn";
+import { ashenRiftAddendumEnHtml } from "../content/privacy/ashenRiftAddendumEn";
 
 export const en: LocaleContent = {
   meta: {
@@ -264,6 +265,14 @@ export const en: LocaleContent = {
       introduction:
         "This Crown & Crafts App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Crown & Crafts game (“Game”) on iOS, Android and web game portals. By playing Crown & Crafts, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.",
       bodyHtml: crownAndCraftsAddendumEnHtml,
+    },
+    ashenRift: {
+      title: "Ashen Rift App Privacy Addendum",
+      lastUpdatedLabel: "Last updated",
+      lastUpdatedDate: "2026-10-21",
+      introduction:
+        "This Ashen Rift App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Ashen Rift game (“Game”) on iOS and Android. By playing Ashen Rift, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.",
+      bodyHtml: ashenRiftAddendumEnHtml,
     },
   },
 };

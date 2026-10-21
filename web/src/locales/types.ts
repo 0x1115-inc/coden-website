@@ -6,7 +6,8 @@ export type PageId =
   | "contact"
   | "privacy"
   | "privacyGreenVector"
-  | "privacyCrownAndCrafts";
+  | "privacyCrownAndCrafts"
+  | "privacyAshenRift";
 export type HeaderNavigationItem =
   | { label: string; target: PageId; href?: never }
   | { label: string; href: string; target?: never };
@@ -153,5 +154,6 @@ export interface LocaleContent {
   privacyAddendums: {
     greenVector: PolicyContent;
     crownAndCrafts: PolicyContent;
+    ashenRift: PolicyContent;
   };
 }
