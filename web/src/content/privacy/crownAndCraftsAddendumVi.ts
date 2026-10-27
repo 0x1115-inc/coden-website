@@ -1,7 +1,7 @@
 export const crownAndCraftsAddendumViHtml = String.raw`
 <h1><strong>Phụ lục về Quyền riêng tư của Ứng dụng</strong></h1>
 <p><strong>Bổ sung cho Chính sách Quyền riêng tư Tổng thể của CÔNG TY TNHH CODEN</strong><br />
-<em>Cập nhật lần cuối: 14-10-2026</em><br />
+<em>Cập nhật lần cuối: 27-10-2026</em><br />
 Phụ lục Quyền riêng tư Ứng dụng Crown &amp; Crafts này (“Phụ lục”) bổ sung cho <strong>Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden</strong> (“Chính sách Chung”) và áp dụng cụ thể cho <strong>trò chơi Crown &amp; Crafts</strong> (“Trò chơi”) trên iOS, Android và các cổng game trên web.<br />
 Bằng việc chơi Crown &amp; Crafts, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.</p>
 <h2><strong>1 - Giới thiệu về Crown &amp; Crafts</strong></h2>
@@ -16,7 +16,7 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
   <tbody>
     <tr><td>iOS 1.0 (App Store)</td><td>Không</td><td>Không</td><td>Không</td><td>Không</td></tr>
     <tr><td>Android 1.0 (Google Play)</td><td>Không</td><td>Google Analytics for Firebase</td><td>Không</td><td>Không</td></tr>
-    <tr><td>Các phiên bản iOS, Android sau này có quảng cáo và gói mua</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>Không</td></tr>
+    <tr><td>Các phiên bản iOS, Android sau này có quảng cáo và gói mua</td><td>Google AdMob</td><td>Google Analytics for Firebase; trên Android từ phiên bản 1.1.7 có thêm Meta App Events</td><td>Remove Ads, Royal Pass</td><td>Không</td></tr>
     <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Thống kê chơi ẩn danh gửi về CODEN</td><td>Không</td><td>Chỉ khi bạn tự gửi</td></tr>
   </tbody>
 </table></div>
@@ -63,10 +63,20 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
   <li>Nếu Trò chơi bị tắt ngang (ví dụ thiết bị hết bộ nhớ), lần mở sau sẽ báo trạng thái ngay trước đó: màn đang chơi, tốc độ trò chơi, thời gian đã chạy, bộ nhớ đang dùng, loại thiết bị (điện thoại hay máy tính), trò chơi có đang chạy nền không, và thông báo lỗi script gần nhất.</li>
 </ul>
 <p>Thống kê được gửi theo từng lô nhỏ về máy chủ của chúng tôi. Như với báo lỗi, máy chủ cũng nhận địa chỉ IP kèm mỗi yêu cầu; địa chỉ này chỉ nằm trong nhật ký máy chủ (mục 7). Thống kê chỉ dùng để hiểu và cải thiện Trò chơi, không bao giờ dùng cho quảng cáo.</p>
+<h3><strong>H. Đo lường quảng cáo với Meta (Android, từ phiên bản 1.1.7)</strong></h3>
+<p>Chúng tôi quảng cáo Trò chơi trên Facebook và Instagram. Để biết quảng cáo nào đem lại lượt cài và người chơi, phiên bản Android có Meta SDK (App Events) của Meta Platforms. Meta SDK không hiện quảng cáo trong Trò chơi và Trò chơi không có đăng nhập Facebook. SDK gửi cho Meta:</p>
+<ul>
+  <li>Mã quảng cáo của thiết bị, địa chỉ IP, mẫu thiết bị, hệ điều hành và phiên bản ứng dụng.</li>
+  <li>Việc Trò chơi được cài và được mở.</li>
+  <li>Một số mốc trong game: xong hướng dẫn, thắng màn chiến dịch (màn, số sao, độ khó), lần thắng đầu tiên và khi đã thắng 3, 6 màn, và lượt xem quảng cáo nhận thưởng.</li>
+  <li>Mua trong ứng dụng: vật phẩm đã mua và giá.</li>
+</ul>
+<p>Meta dùng các thông tin này để đo lường, cải thiện chiến dịch quảng cáo của chúng tôi và, theo chính sách riêng của Meta, cho các dịch vụ quảng cáo của Meta. Xem <a href="https://www.facebook.com/privacy/policy/">Chính sách Quyền riêng tư của Meta</a>. Để hạn chế, hãy đặt lại hoặc xoá mã quảng cáo (mục 8), hoặc quản lý “Hoạt động của bạn bên ngoài công nghệ của Meta” trong cài đặt Facebook, Instagram.</p>
 <h2><strong>4 - Cách sử dụng thông tin</strong></h2>
 <ul>
   <li>Vận hành Trò chơi, giữ tiến trình chơi và vật phẩm đã mua.</li>
   <li>Hiển thị và đo lường quảng cáo ở các phiên bản có quảng cáo.</li>
+  <li>Đo lường quảng cáo của chính chúng tôi cho Trò chơi trên Facebook và Instagram (Meta).</li>
   <li>Biết phần nào của Trò chơi hoạt động tốt, sửa lỗi và sự cố.</li>
   <li>Chống gian lận và lạm dụng.</li>
 </ul>
@@ -75,13 +85,14 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
 <ul>
   <li>Thực hiện hợp đồng: cung cấp Trò chơi và vật phẩm bạn mua.</li>
   <li>Sự đồng ý: quảng cáo cá nhân hoá và theo dõi. Bạn có thể rút lại sự đồng ý bất cứ lúc nào.</li>
-  <li>Lợi ích hợp pháp: phân tích, báo lỗi bạn gửi, quảng cáo không cá nhân hoá giúp Trò chơi miễn phí, và bảo mật.</li>
+  <li>Lợi ích hợp pháp: phân tích, báo lỗi bạn gửi, quảng cáo không cá nhân hoá giúp Trò chơi miễn phí, đo lường chiến dịch quảng cáo của chúng tôi, và bảo mật.</li>
 </ul>
 <h2><strong>6 - Dịch vụ bên thứ ba</strong></h2>
 <div class="policy-table"><table>
   <thead><tr><th>Dịch vụ</th><th>Mục đích</th><th>Chính sách của họ</th></tr></thead>
   <tbody>
     <tr><td>Google (AdMob, Firebase)</td><td>Quảng cáo, phân tích, báo cáo sự cố</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
+    <tr><td>Meta Platforms (Meta SDK, Android)</td><td>Đo lường quảng cáo của chúng tôi trên Facebook và Instagram</td><td><a href="https://www.facebook.com/privacy/policy/">Chính sách Quyền riêng tư của Meta</a></td></tr>
     <tr><td>Apple (App Store)</td><td>Phân phối ứng dụng, mua trong ứng dụng</td><td><a href="https://www.apple.com/legal/privacy/">Chính sách Quyền riêng tư của Apple</a></td></tr>
     <tr><td>Google Play</td><td>Phân phối ứng dụng, mua trong ứng dụng</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
     <tr><td>CrazyGames</td><td>Vận hành phiên bản web</td><td><a href="https://www.crazygames.com/privacy-policy">Chính sách Quyền riêng tư của CrazyGames</a></td></tr>
@@ -100,11 +111,12 @@ Trò chơi không có tài khoản người dùng và không bao giờ hỏi tê
     <tr><td>Nhật ký máy chủ có địa chỉ IP</td><td>14 ngày</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Tối đa 14 tháng</td></tr>
     <tr><td>Dữ liệu quảng cáo</td><td>Theo chính sách của Google</td></tr>
+    <tr><td>Dữ liệu đo lường quảng cáo (Meta)</td><td>Theo chính sách của Meta</td></tr>
   </tbody>
 </table></div>
 <h2><strong>8 - Quyền của người dùng</strong></h2>
 <ul>
-  <li><strong>Quảng cáo:</strong> đổi lựa chọn ở mục Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo.</li>
+  <li><strong>Quảng cáo:</strong> đổi lựa chọn ở mục Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo; việc này cũng khiến Meta không nối các sự kiện mới với mã cũ. Trong Facebook hoặc Instagram, bạn có thể quản lý “Hoạt động của bạn bên ngoài công nghệ của Meta”.</li>
   <li><strong>Dữ liệu trò chơi:</strong> gỡ Trò chơi hoặc xoá dữ liệu trang web.</li>
   <li><strong>Thống kê chơi:</strong> chỉ gắn với mã ngẫu nhiên của bản cài đặt trong trình duyệt hoặc ứng dụng. Xoá dữ liệu trang web thì Trò chơi tạo mã mới, thống kê sau đó không còn nối với thống kê trước.</li>
   <li><strong>Báo lỗi:</strong> để xem hoặc xoá một báo lỗi, gửi email tới legal@coden.org kèm tên trò chơi và mã báo lỗi hiện ra sau khi bạn gửi. Chúng tôi trả lời trong vòng 30 ngày.</li>
@@ -119,7 +131,7 @@ Nếu bạn cho rằng một trẻ em đã gửi thông tin cho chúng tôi, hã
 <p>Dữ liệu gửi tới máy chủ của chúng tôi được mã hoá khi truyền (HTTPS). Chỉ đội ngũ của chúng tôi truy cập được báo lỗi.<br />
 Dù chúng tôi áp dụng các biện pháp bảo vệ hợp lý, không có hệ thống nào an toàn tuyệt đối.</p>
 <h2><strong>11 - Chuyển dữ liệu quốc tế</strong></h2>
-<p>Google và các dịch vụ nêu trên có thể xử lý dữ liệu bên ngoài quốc gia của bạn, kể cả tại Hoa Kỳ. Báo lỗi và thống kê chơi được xử lý và lưu tại Việt Nam.</p>
+<p>Google, Meta và các dịch vụ nêu trên có thể xử lý dữ liệu bên ngoài quốc gia của bạn, kể cả tại Hoa Kỳ. Báo lỗi và thống kê chơi được xử lý và lưu tại Việt Nam.</p>
 <h2><strong>12 - Thay đổi Phụ lục</strong></h2>
 <p>Chúng tôi cập nhật Phụ lục này khi Trò chơi hoặc các dịch vụ Trò chơi sử dụng thay đổi, trước khi phát hành phiên bản có thay đổi đó.<br />
 Ngày “Cập nhật lần cuối” sẽ được sửa cho phù hợp.<br />

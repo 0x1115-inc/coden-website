@@ -1,7 +1,7 @@
 export const crownAndCraftsAddendumEnHtml = String.raw`
 <h1><strong>App Privacy Addendum</strong></h1>
 <p><strong>Supplement to the Master Privacy Policy of CODEN COMPANY LIMITED</strong><br />
-<em>Last updated: 2026-10-14</em><br />
+<em>Last updated: 2026-10-27</em><br />
 This Crown &amp; Crafts App Privacy Addendum (“Addendum”) supplements the <strong>Master Privacy Policy of CODEN COMPANY LIMITED</strong> (“Master Policy”) and applies specifically to the <strong>Crown &amp; Crafts game</strong> (“Game”) on iOS, Android and web game portals.<br />
 By playing Crown &amp; Crafts, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.</p>
 <h2><strong>1 - About Crown &amp; Crafts</strong></h2>
@@ -17,7 +17,7 @@ For general privacy practices, please refer to the Master Privacy Policy availab
   <tbody>
     <tr><td>iOS 1.0 (App Store)</td><td>None</td><td>None</td><td>None</td><td>No</td></tr>
     <tr><td>Android 1.0 (Google Play)</td><td>None</td><td>Google Analytics for Firebase</td><td>None</td><td>No</td></tr>
-    <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>Google Analytics for Firebase</td><td>Remove Ads, Royal Pass</td><td>No</td></tr>
+    <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>Google Analytics for Firebase; on Android from version 1.1.7 also Meta App Events</td><td>Remove Ads, Royal Pass</td><td>No</td></tr>
     <tr><td>Web (CrazyGames)</td><td>CrazyGames</td><td>Anonymous gameplay statistics sent to CODEN</td><td>None</td><td>Only if you send one</td></tr>
   </tbody>
 </table></div>
@@ -64,10 +64,20 @@ For general privacy practices, please refer to the Master Privacy Policy availab
   <li>If the Game closed unexpectedly (for example when the device ran out of memory), the next time it starts it reports the state just before: the mission, game speed, how long it ran, memory use, whether it ran on a phone or a computer, whether it was in the background, and the last script error message.</li>
 </ul>
 <p>Statistics are sent in small batches to our server. As with bug reports, the server also receives your IP address with each request; it is kept only in server logs (section 7). The statistics are used only to understand and improve the Game, never for advertising.</p>
+<h3><strong>H. Advertising measurement with Meta (Android, from version 1.1.7)</strong></h3>
+<p>We advertise the Game on Facebook and Instagram. To learn which of these ads lead to installs and players, the Android version includes the Meta SDK (App Events) from Meta Platforms. The Meta SDK does not show ads inside the Game and the Game has no Facebook login. It sends Meta:</p>
+<ul>
+  <li>Your device’s advertising identifier, your IP address, device model, operating system and app version.</li>
+  <li>That the Game was installed and opened.</li>
+  <li>A few game milestones: tutorial completed, campaign mission won (mission, stars, difficulty), first win and the 3rd and 6th mission won, and rewarded ads watched.</li>
+  <li>In-app purchases: which item was bought and its price.</li>
+</ul>
+<p>Meta uses this information to measure and improve our ad campaigns and, under Meta’s own policies, its advertising services. See the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>. To limit this, reset or delete your advertising ID (section 8), or manage “Your activity off Meta technologies” in your Facebook or Instagram settings.</p>
 <h2><strong>4 - How we use information</strong></h2>
 <ul>
   <li>To run the Game and keep your progress and purchases.</li>
   <li>To show and measure ads in versions with ads.</li>
+  <li>To measure our own ads for the Game on Facebook and Instagram (Meta).</li>
   <li>To learn which parts of the Game work, and to fix bugs and crashes.</li>
   <li>To prevent fraud and abuse.</li>
 </ul>
@@ -76,13 +86,14 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 <ul>
   <li>Contract: to provide the Game and the items you buy.</li>
   <li>Consent: personalized ads and tracking. You can withdraw consent at any time.</li>
-  <li>Legitimate interests: analytics, bug reports you send, non-personalized ads that keep the Game free, and security.</li>
+  <li>Legitimate interests: analytics, bug reports you send, non-personalized ads that keep the Game free, measuring our own ad campaigns, and security.</li>
 </ul>
 <h2><strong>6 - Third-party services</strong></h2>
 <div class="policy-table"><table>
   <thead><tr><th>Service</th><th>Purpose</th><th>Their policy</th></tr></thead>
   <tbody>
     <tr><td>Google (AdMob, Firebase)</td><td>Ads, analytics, crash reports</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+    <tr><td>Meta Platforms (Meta SDK, Android)</td><td>Measuring our ads on Facebook and Instagram</td><td><a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></td></tr>
     <tr><td>Apple (App Store)</td><td>App distribution, purchases</td><td><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td></tr>
     <tr><td>Google Play</td><td>App distribution, purchases</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
     <tr><td>CrazyGames</td><td>Running the web versions</td><td><a href="https://www.crazygames.com/privacy-policy">CrazyGames Privacy Policy</a></td></tr>
@@ -101,11 +112,12 @@ For general privacy practices, please refer to the Master Privacy Policy availab
     <tr><td>Server logs with IP addresses</td><td>14 days</td></tr>
     <tr><td>Google Analytics for Firebase</td><td>Up to 14 months</td></tr>
     <tr><td>Advertising data</td><td>As set out in Google’s policies</td></tr>
+    <tr><td>Advertising measurement data (Meta)</td><td>As set out in Meta’s policies</td></tr>
   </tbody>
 </table></div>
 <h2><strong>8 - User rights</strong></h2>
 <ul>
-  <li><strong>Ads:</strong> change your consent under Privacy settings in the Game’s Settings menu. On iOS, go to Settings › Privacy &amp; Security › Tracking. On Android, reset or delete your advertising ID.</li>
+  <li><strong>Ads:</strong> change your consent under Privacy settings in the Game’s Settings menu. On iOS, go to Settings › Privacy &amp; Security › Tracking. On Android, reset or delete your advertising ID; this also stops Meta from linking new events to your old ID. In Facebook or Instagram, you can manage “Your activity off Meta technologies”.</li>
   <li><strong>Game data:</strong> uninstall the Game or clear the site data.</li>
   <li><strong>Gameplay statistics:</strong> they are linked only to the random installation ID in your browser or app. Clearing the site data gives the Game a new ID, so later statistics are no longer linked to earlier ones.</li>
   <li><strong>Bug reports:</strong> to see or delete a report, email legal@coden.org with the game name and the report code shown after you sent it. We reply within 30 days.</li>
@@ -120,7 +132,7 @@ If you believe a child has sent us information, contact us and we will delete it
 <p>Data sent to our server is encrypted in transit (HTTPS). Only our team can access bug reports.<br />
 While we implement commercially reasonable safeguards, no system can be fully secure.</p>
 <h2><strong>11 - International data transfers</strong></h2>
-<p>Google and the other services above may process data outside your country, including in the United States. Bug reports and gameplay statistics are processed and stored in Vietnam.</p>
+<p>Google, Meta and the other services above may process data outside your country, including in the United States. Bug reports and gameplay statistics are processed and stored in Vietnam.</p>
 <h2><strong>12 - Changes to this Addendum</strong></h2>
 <p>We update this Addendum when the Game or the services it uses change, before the version with that change is released.<br />
 The “Last updated” date will be revised to reflect amendments.<br />
