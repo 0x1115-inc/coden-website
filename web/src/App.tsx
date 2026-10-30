@@ -9,6 +9,7 @@ import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { GreenVectorAddendumPage } from './components/GreenVectorAddendumPage';
 import { CrownAndCraftsAddendumPage } from './components/CrownAndCraftsAddendumPage';
 import { AshenRiftAddendumPage } from './components/AshenRiftAddendumPage';
+import { DungeonRaidersAddendumPage } from './components/DungeonRaidersAddendumPage';
 import { Toaster } from './components/ui/sonner';
 import type { PageId } from './locales';
 
@@ -21,6 +22,7 @@ const pageToPath: Record<PageId, string> = {
   privacyGreenVector: '/privacy-policy/green-vector',
   privacyCrownAndCrafts: '/privacy-policy/crown-and-crafts',
   privacyAshenRift: '/privacy-policy/ashen-rift',
+  privacyDungeonRaiders: '/privacy-policy/dungeon-raiders',
 };
 
 const pathToPage = Object.entries(pageToPath).reduce<Record<string, PageId>>((acc, [page, path]) => {
@@ -85,6 +87,8 @@ export default function App() {
         return <CrownAndCraftsAddendumPage />;
       case 'privacyAshenRift':
         return <AshenRiftAddendumPage />;
+      case 'privacyDungeonRaiders':
+        return <DungeonRaidersAddendumPage />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }

@@ -7,7 +7,8 @@ export type PageId =
   | "privacy"
   | "privacyGreenVector"
   | "privacyCrownAndCrafts"
-  | "privacyAshenRift";
+  | "privacyAshenRift"
+  | "privacyDungeonRaiders";
 export type HeaderNavigationItem =
   | { label: string; target: PageId; href?: never }
   | { label: string; href: string; target?: never };
@@ -155,5 +156,6 @@ export interface LocaleContent {
     greenVector: PolicyContent;
     crownAndCrafts: PolicyContent;
     ashenRift: PolicyContent;
+    dungeonRaiders: PolicyContent;
   };
 }
