@@ -3,6 +3,7 @@ import { masterPrivacyPolicyEnHtml } from "../content/privacy/masterPrivacyPolic
 import { greenVectorAddendumEnHtml } from "../content/privacy/greenVectorAddendumEn";
 import { crownAndCraftsAddendumEnHtml } from "../content/privacy/crownAndCraftsAddendumEn";
 import { ashenRiftAddendumEnHtml } from "../content/privacy/ashenRiftAddendumEn";
+import { dungeonRaidersAddendumEnHtml } from "../content/privacy/dungeonRaidersAddendumEn";
 
 export const en: LocaleContent = {
   meta: {
@@ -273,6 +274,14 @@ export const en: LocaleContent = {
       introduction:
         "This Ashen Rift App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Ashen Rift game (“Game”) on iOS and Android. By playing Ashen Rift, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.",
       bodyHtml: ashenRiftAddendumEnHtml,
+    },
+    dungeonRaiders: {
+      title: "Dungeon Raiders App Privacy Addendum",
+      lastUpdatedLabel: "Last updated",
+      lastUpdatedDate: "2026-10-30",
+      introduction:
+        "This Dungeon Raiders App Privacy Addendum (“Addendum”) supplements the Master Privacy Policy of CODEN COMPANY LIMITED (“Master Policy”) and applies specifically to the Dungeon Raiders game (“Game”) on iOS and Android. By playing Dungeon Raiders, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.",
+      bodyHtml: dungeonRaidersAddendumEnHtml,
     },
   },
 };
