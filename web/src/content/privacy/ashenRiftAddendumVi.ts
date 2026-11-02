@@ -1,7 +1,7 @@
 export const ashenRiftAddendumViHtml = String.raw`
 <h1><strong>Phụ lục Quyền riêng tư Ứng dụng</strong></h1>
 <p><strong>Bổ sung cho Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden</strong><br />
-<em>Cập nhật lần cuối: 21-10-2026</em><br />
+<em>Cập nhật lần cuối: 02-11-2026</em><br />
 Phụ lục Quyền riêng tư Ứng dụng Ashen Rift này (“Phụ lục”) bổ sung cho <strong>Chính sách Quyền riêng tư Tổng thể của Công ty TNHH Coden</strong> (“Chính sách Chung”) và áp dụng cụ thể cho <strong>trò chơi Ashen Rift</strong> (“Trò chơi”) trên iOS và Android.<br />
 Bằng việc chơi Ashen Rift, bạn đồng ý với Phụ lục này và Chính sách Chung. Trong trường hợp có bất kỳ sự không nhất quán nào, Phụ lục này được ưu tiên áp dụng cho các vấn đề liên quan đến Trò chơi.</p>
 <h2><strong>1 - Về Ashen Rift</strong></h2>
@@ -16,13 +16,13 @@ Về các thông lệ quyền riêng tư chung, vui lòng xem Chính sách Quy�
   <thead><tr><th>Phiên bản</th><th>Quảng cáo</th><th>Phân tích</th><th>Mua trong ứng dụng</th><th>Báo lỗi gửi cho CODEN</th></tr></thead>
   <tbody>
     <tr><td>Bản iOS và Android đầu tiên (1.0)</td><td>Không</td><td>Không</td><td>Không</td><td>Chỉ khi bạn gửi</td></tr>
-    <tr><td>Các bản iOS và Android sau này có quảng cáo và mua trong ứng dụng</td><td>Google AdMob</td><td>Không</td><td>Gói Khởi Đầu, Ấn Thợ Săn và các gói tài nguyên</td><td>Chỉ khi bạn gửi</td></tr>
+    <tr><td>Các bản iOS và Android sau này có quảng cáo và mua trong ứng dụng</td><td>Google AdMob</td><td>Google Analytics for Firebase, Firebase Crashlytics và Meta App Events; trên Android từ phiên bản 1.1.12 có thêm TikTok App Events</td><td>Gói Khởi Đầu, Ấn Thợ Săn và các gói tài nguyên</td><td>Chỉ khi bạn gửi</td></tr>
   </tbody>
 </table></div>
 <p>Mục 3 mô tả từng loại dữ liệu. Một mục chỉ áp dụng cho các phiên bản có tính năng đó.</p>
 <h2><strong>3 - Thông tin thu thập qua Trò chơi</strong></h2>
 <h3><strong>A. Dữ liệu game lưu trên thiết bị của bạn</strong></h3>
-<p>Tiến trình, cài đặt và vật phẩm bạn sở hữu được lưu trên thiết bị của bạn. Bạn cũng có thể sao chép mã sao lưu trong menu Cài đặt để dán sang thiết bị khác; mã này chỉ hiện cho bạn và không gửi cho CODEN. Dữ liệu này ở lại trên thiết bị và bị xoá khi bạn gỡ Trò chơi.</p>
+<p>Tiến trình, cài đặt và vật phẩm bạn sở hữu được lưu trên thiết bị của bạn. Dữ liệu này ở lại trên thiết bị và bị xoá khi bạn gỡ Trò chơi.</p>
 <h3><strong>B. Báo lỗi bạn chủ động gửi</strong></h3>
 <p>Trò chơi có nút “Báo lỗi” trong Cài đặt. Báo lỗi chỉ được gửi khi bạn bấm Gửi. Báo lỗi gồm:</p>
 <ul>
@@ -47,25 +47,54 @@ Về các thông lệ quyền riêng tư chung, vui lòng xem Chính sách Quy�
 </ul>
 <h3><strong>D. Mua trong ứng dụng</strong></h3>
 <p>Giao dịch mua trong ứng dụng do Apple (App Store) hoặc Google (Google Play) xử lý. CODEN không bao giờ thấy thẻ hay thông tin thanh toán của bạn. Chúng tôi chỉ nhận xác nhận bạn sở hữu vật phẩm nào để Trò chơi mở khoá và khôi phục chúng trên thiết bị mới.</p>
+<h3><strong>E. Phân tích và báo cáo sự cố (các phiên bản có quảng cáo và mua trong ứng dụng)</strong></h3>
+<p>Chúng tôi dùng Google Analytics for Firebase và Firebase Crashlytics để hiểu cách Trò chơi được chơi và sửa các sự cố. Chúng không được dùng để cá nhân hoá quảng cáo. Chúng thu thập:</p>
+<ul>
+  <li>Mã nhận dạng phiên bản ứng dụng, mẫu thiết bị, hệ điều hành, phiên bản ứng dụng, ngôn ngữ và vị trí gần đúng suy ra từ địa chỉ IP.</li>
+  <li>Sự kiện trong game, như bắt đầu và kết thúc chuyến, vượt chương, xong hướng dẫn và lượt xem quảng cáo thưởng.</li>
+  <li>Báo cáo sự cố và thông báo lỗi kỹ thuật.</li>
+</ul>
+<h3><strong>F. Đo lường quảng cáo với Meta (các phiên bản có quảng cáo và mua trong ứng dụng)</strong></h3>
+<p>Chúng tôi quảng cáo Trò chơi trên Facebook và Instagram. Để biết quảng cáo nào đem lại lượt cài và người chơi, Trò chơi có Meta SDK (App Events) của Meta Platforms. Meta SDK không hiện quảng cáo trong Trò chơi và Trò chơi không có đăng nhập Facebook. SDK gửi cho Meta:</p>
+<ul>
+  <li>Mã định danh quảng cáo của thiết bị (trên iOS, chỉ khi bạn cho phép theo dõi), địa chỉ IP, mẫu thiết bị, hệ điều hành và phiên bản ứng dụng.</li>
+  <li>Việc Trò chơi được cài và được mở.</li>
+  <li>Một số mốc trong game: xong hướng dẫn, vượt chương lần đầu và lượt xem quảng cáo thưởng.</li>
+  <li>Mua trong ứng dụng: vật phẩm đã mua và giá.</li>
+</ul>
+<p>Meta dùng các thông tin này để đo lường, cải thiện chiến dịch quảng cáo của chúng tôi và, theo chính sách riêng của Meta, cho các dịch vụ quảng cáo của Meta. Xem <a href="https://www.facebook.com/privacy/policy/">Chính sách Quyền riêng tư của Meta</a>. Để hạn chế, hãy dùng các cài đặt thiết bị ở mục 8, hoặc quản lý “Hoạt động của bạn bên ngoài công nghệ của Meta” trong cài đặt Facebook, Instagram.</p>
+<h3><strong>G. Đo lường quảng cáo với TikTok (Android, từ phiên bản 1.1.12)</strong></h3>
+<p>Chúng tôi quảng cáo Trò chơi trên TikTok. Để biết quảng cáo nào đem lại lượt cài và người chơi, phiên bản Android có TikTok App Events SDK. SDK không hiện quảng cáo trong Trò chơi và Trò chơi không có đăng nhập TikTok. Chúng tôi không gửi cho TikTok họ tên, email hay số điện thoại của bạn. SDK gửi cho TikTok:</p>
+<ul>
+  <li>Mã định danh quảng cáo của thiết bị, địa chỉ IP, mẫu thiết bị, hệ điều hành, ngôn ngữ, phiên bản ứng dụng và thông tin giới thiệu cài đặt của Google Play.</li>
+  <li>Việc Trò chơi được cài và được mở, và bạn có quay lại vào ngày thứ hai hay không.</li>
+  <li>Một số mốc trong game: xong hướng dẫn, vượt chương lần đầu và lượt xem quảng cáo thưởng.</li>
+  <li>Mua trong ứng dụng: vật phẩm đã mua và giá.</li>
+</ul>
+<p>TikTok dùng các thông tin này để đo lường, cải thiện chiến dịch quảng cáo của chúng tôi và, theo điều khoản riêng của TikTok, cho các dịch vụ quảng cáo của TikTok. Xem <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">Chính sách Quyền riêng tư của TikTok</a>. Tại nơi áp dụng biểu mẫu đồng ý của chúng tôi (EEA, Vương quốc Anh và Thuỵ Sĩ), TikTok SDK không khởi động nếu bạn từ chối việc lưu và truy cập thông tin trên thiết bị; lựa chọn mới có hiệu lực từ lần mở Trò chơi kế tiếp. Bạn cũng có thể đặt lại hoặc xoá mã quảng cáo (mục 8).</p>
 <h2><strong>4 - Cách chúng tôi sử dụng thông tin</strong></h2>
 <ul>
   <li>Vận hành Trò chơi và giữ tiến trình, giao dịch mua của bạn.</li>
   <li>Hiển thị và đo lường quảng cáo ở các phiên bản có quảng cáo.</li>
-  <li>Tìm và sửa các lỗi bạn báo.</li>
+  <li>Đo lường quảng cáo của chính chúng tôi cho Trò chơi trên Facebook, Instagram (Meta) và TikTok.</li>
+  <li>Hiểu cách Trò chơi được chơi, tìm và sửa các sự cố và lỗi bạn báo.</li>
   <li>Ngăn chặn gian lận và lạm dụng.</li>
 </ul>
 <p>CODEN không bán thông tin cá nhân của bạn.</p>
 <h2><strong>5 - Cơ sở pháp lý (EEA và Vương quốc Anh)</strong></h2>
 <ul>
   <li>Hợp đồng: cung cấp Trò chơi và các vật phẩm bạn mua.</li>
-  <li>Sự đồng ý: quảng cáo cá nhân hoá và theo dõi. Bạn có thể rút lại sự đồng ý bất cứ lúc nào.</li>
-  <li>Lợi ích hợp pháp: báo lỗi bạn gửi, quảng cáo không cá nhân hoá giúp Trò chơi miễn phí, và bảo mật.</li>
+  <li>Sự đồng ý: quảng cáo cá nhân hoá, theo dõi và, tại nơi áp dụng biểu mẫu đồng ý, đo lường quảng cáo với TikTok. Bạn có thể rút lại sự đồng ý bất cứ lúc nào.</li>
+  <li>Lợi ích hợp pháp: phân tích và báo cáo sự cố, báo lỗi bạn gửi, quảng cáo không cá nhân hoá giúp Trò chơi miễn phí, đo lường chiến dịch quảng cáo của chúng tôi với Meta, và bảo mật.</li>
 </ul>
 <h2><strong>6 - Dịch vụ của bên thứ ba</strong></h2>
 <div class="policy-table"><table>
   <thead><tr><th>Dịch vụ</th><th>Mục đích</th><th>Chính sách của họ</th></tr></thead>
   <tbody>
     <tr><td>Google AdMob</td><td>Quảng cáo (các phiên bản có quảng cáo)</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
+    <tr><td>Google Analytics for Firebase, Firebase Crashlytics</td><td>Phân tích và báo cáo sự cố</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
+    <tr><td>Meta Platforms (Meta SDK)</td><td>Đo lường quảng cáo của chúng tôi trên Facebook và Instagram</td><td><a href="https://www.facebook.com/privacy/policy/">Chính sách Quyền riêng tư của Meta</a></td></tr>
+    <tr><td>TikTok (TikTok App Events SDK, Android)</td><td>Đo lường quảng cáo của chúng tôi trên TikTok</td><td><a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">Chính sách Quyền riêng tư của TikTok</a></td></tr>
     <tr><td>Apple (App Store)</td><td>Phân phối ứng dụng, giao dịch mua</td><td><a href="https://www.apple.com/legal/privacy/">Chính sách Quyền riêng tư của Apple</a></td></tr>
     <tr><td>Google Play</td><td>Phân phối ứng dụng, giao dịch mua</td><td><a href="https://policies.google.com/privacy">Chính sách Quyền riêng tư của Google</a></td></tr>
     <tr><td>Telegram</td><td>Kênh riêng để nhóm của chúng tôi xem báo lỗi</td><td><a href="https://telegram.org/privacy">Chính sách Quyền riêng tư của Telegram</a></td></tr>
@@ -81,11 +110,13 @@ Về các thông lệ quyền riêng tư chung, vui lòng xem Chính sách Quy�
     <tr><td>Báo lỗi</td><td>Không lưu trên máy chủ. Giữ trong kênh trò chuyện riêng tối đa 12 tháng rồi xoá</td></tr>
     <tr><td>Nhật ký máy chủ có địa chỉ IP</td><td>14 ngày</td></tr>
     <tr><td>Dữ liệu quảng cáo</td><td>Theo chính sách của Google</td></tr>
+    <tr><td>Dữ liệu phân tích và báo cáo sự cố (Firebase)</td><td>Theo chính sách của Google và cài đặt Firebase của chúng tôi</td></tr>
+    <tr><td>Dữ liệu đo lường quảng cáo (Meta, TikTok)</td><td>Theo chính sách của Meta và TikTok</td></tr>
   </tbody>
 </table></div>
 <h2><strong>8 - Quyền của người dùng</strong></h2>
 <ul>
-  <li><strong>Quảng cáo:</strong> đổi lựa chọn đồng ý tại Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo.</li>
+  <li><strong>Quảng cáo:</strong> đổi lựa chọn đồng ý tại Cài đặt quyền riêng tư trong menu Cài đặt của Trò chơi. Trên iOS, vào Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Trên Android, đặt lại hoặc xoá mã quảng cáo; việc này cũng khiến Meta và TikTok không nối các sự kiện mới với mã cũ. Trong Facebook hoặc Instagram, bạn có thể quản lý “Hoạt động của bạn bên ngoài công nghệ của Meta”.</li>
   <li><strong>Dữ liệu game:</strong> gỡ Trò chơi.</li>
   <li><strong>Báo lỗi:</strong> để xem hoặc xoá một báo lỗi, gửi email tới legal@coden.org kèm tên game và ngày bạn gửi. Chúng tôi phản hồi trong 30 ngày.</li>
   <li>Tuỳ nơi bạn sống (ví dụ EEA, Vương quốc Anh hoặc California), bạn có thể có quyền truy cập, chỉnh sửa, xoá hoặc nhận bản sao dữ liệu của mình, phản đối hoặc hạn chế việc sử dụng, và khiếu nại với cơ quan bảo vệ dữ liệu.</li>
@@ -99,7 +130,7 @@ Nếu bạn cho rằng một trẻ em đã gửi thông tin cho chúng tôi, hã
 <p>Dữ liệu gửi tới máy chủ của chúng tôi được mã hoá khi truyền (HTTPS). Chỉ nhóm của chúng tôi xem được báo lỗi.<br />
 Dù áp dụng các biện pháp bảo vệ hợp lý về mặt thương mại, không hệ thống nào an toàn tuyệt đối.</p>
 <h2><strong>11 - Chuyển dữ liệu quốc tế</strong></h2>
-<p>Google và các dịch vụ khác nêu trên có thể xử lý dữ liệu ngoài quốc gia của bạn, bao gồm Hoa Kỳ. Báo lỗi được chuyển tiếp qua máy chủ đặt tại Việt Nam.</p>
+<p>Google, Meta, TikTok và các dịch vụ khác nêu trên có thể xử lý dữ liệu ngoài quốc gia của bạn, bao gồm Hoa Kỳ. Báo lỗi được chuyển tiếp qua máy chủ đặt tại Việt Nam.</p>
 <h2><strong>12 - Thay đổi Phụ lục này</strong></h2>
 <p>Chúng tôi cập nhật Phụ lục này khi Trò chơi hoặc các dịch vụ nó sử dụng thay đổi, trước khi phiên bản có thay đổi đó được phát hành.<br />
 Ngày “Cập nhật lần cuối” sẽ được điều chỉnh theo các sửa đổi.<br />

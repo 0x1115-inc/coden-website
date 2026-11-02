@@ -1,7 +1,7 @@
 export const ashenRiftAddendumEnHtml = String.raw`
 <h1><strong>App Privacy Addendum</strong></h1>
 <p><strong>Supplement to the Master Privacy Policy of CODEN COMPANY LIMITED</strong><br />
-<em>Last updated: 2026-10-21</em><br />
+<em>Last updated: 2026-11-02</em><br />
 This Ashen Rift App Privacy Addendum (“Addendum”) supplements the <strong>Master Privacy Policy of CODEN COMPANY LIMITED</strong> (“Master Policy”) and applies specifically to the <strong>Ashen Rift game</strong> (“Game”) on iOS and Android.<br />
 By playing Ashen Rift, you agree to this Addendum and the Master Policy. In the event of any inconsistency, this Addendum prevails for matters relating to the Game.</p>
 <h2><strong>1 - About Ashen Rift</strong></h2>
@@ -16,13 +16,13 @@ For general privacy practices, please refer to the Master Privacy Policy availab
   <thead><tr><th>Version</th><th>Ads</th><th>Analytics</th><th>In-app purchases</th><th>Bug reports sent to CODEN</th></tr></thead>
   <tbody>
     <tr><td>First iOS and Android versions (1.0)</td><td>None</td><td>None</td><td>None</td><td>Only if you send one</td></tr>
-    <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>None</td><td>Starter Pack, Hunter’s Seal and resource packs</td><td>Only if you send one</td></tr>
+    <tr><td>Later iOS and Android versions with ads and purchases</td><td>Google AdMob</td><td>Google Analytics for Firebase, Firebase Crashlytics and Meta App Events; on Android from version 1.1.12 also TikTok App Events</td><td>Starter Pack, Hunter’s Seal and resource packs</td><td>Only if you send one</td></tr>
   </tbody>
 </table></div>
 <p>Section 3 describes each kind of data. A section applies only to the versions that include that feature.</p>
 <h2><strong>3 - Information collected through the Game</strong></h2>
 <h3><strong>A. Game data stored on your device</strong></h3>
-<p>Your progress, settings and the items you own are saved on your device. You can also copy a backup code from the Settings menu and paste it on another device; the code is shown to you and is not sent to CODEN. This data stays on your device and is deleted when you uninstall the Game.</p>
+<p>Your progress, settings and the items you own are saved on your device. This data stays on your device and is deleted when you uninstall the Game.</p>
 <h3><strong>B. Bug reports you choose to send</strong></h3>
 <p>The Game has a “Report a bug” button in Settings. A report is sent only when you press Send. It contains:</p>
 <ul>
@@ -47,25 +47,54 @@ For general privacy practices, please refer to the Master Privacy Policy availab
 </ul>
 <h3><strong>D. In-app purchases</strong></h3>
 <p>In-app purchases are processed by Apple (App Store) or Google (Google Play). CODEN never sees your card or payment details. We receive only a confirmation of which items you own, so the Game can unlock them and restore them on a new device.</p>
+<h3><strong>E. Analytics and crash reports (versions with ads and purchases)</strong></h3>
+<p>We use Google Analytics for Firebase and Firebase Crashlytics to understand how the Game is played and to fix crashes. They are not used to personalize ads. They collect:</p>
+<ul>
+  <li>An app instance identifier, your device model, operating system, app version, language and approximate location derived from your IP address.</li>
+  <li>Game events, such as runs started and ended, chapters cleared, the tutorial completed and rewarded ads watched.</li>
+  <li>Crash reports and technical error messages.</li>
+</ul>
+<h3><strong>F. Advertising measurement with Meta (versions with ads and purchases)</strong></h3>
+<p>We advertise the Game on Facebook and Instagram. To learn which of these ads lead to installs and players, the Game includes the Meta SDK (App Events) from Meta Platforms. The Meta SDK does not show ads inside the Game and the Game has no Facebook login. It sends Meta:</p>
+<ul>
+  <li>Your device’s advertising identifier (on iOS, only if you allow tracking), your IP address, device model, operating system and app version.</li>
+  <li>That the Game was installed and opened.</li>
+  <li>A few game milestones: tutorial completed, chapter cleared for the first time and rewarded ads watched.</li>
+  <li>In-app purchases: which item was bought and its price.</li>
+</ul>
+<p>Meta uses this information to measure and improve our ad campaigns and, under Meta’s own policies, its advertising services. See the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>. To limit this, use the device settings in section 8, or manage “Your activity off Meta technologies” in your Facebook or Instagram settings.</p>
+<h3><strong>G. Advertising measurement with TikTok (Android, from version 1.1.12)</strong></h3>
+<p>We advertise the Game on TikTok. To learn which of these ads lead to installs and players, the Android version includes the TikTok App Events SDK. The SDK does not show ads inside the Game and the Game has no TikTok login. We do not send TikTok your name, email address or phone number. The SDK sends TikTok:</p>
+<ul>
+  <li>Your device’s advertising identifier, your IP address, device model, operating system, language and app version, and Google Play install referrer information.</li>
+  <li>That the Game was installed and opened, and whether you returned on the second day.</li>
+  <li>A few game milestones: tutorial completed, chapter cleared for the first time and rewarded ads watched.</li>
+  <li>In-app purchases: which item was bought and its price.</li>
+</ul>
+<p>TikTok uses this information to measure and improve our ad campaigns and, under TikTok’s own terms, its advertising services. See the <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a>. Where our consent form applies (the EEA, the UK and Switzerland), the TikTok SDK does not start if you decline storing and accessing information on your device; a changed choice takes effect the next time you open the Game. You can also reset or delete your advertising ID (section 8).</p>
 <h2><strong>4 - How we use information</strong></h2>
 <ul>
   <li>To run the Game and keep your progress and purchases.</li>
   <li>To show and measure ads in versions with ads.</li>
-  <li>To find and fix bugs you report.</li>
+  <li>To measure our own ads for the Game on Facebook, Instagram (Meta) and TikTok.</li>
+  <li>To understand how the Game is played, and to find and fix crashes and bugs you report.</li>
   <li>To prevent fraud and abuse.</li>
 </ul>
 <p>CODEN does not sell your personal information.</p>
 <h2><strong>5 - Legal bases (EEA and UK)</strong></h2>
 <ul>
   <li>Contract: to provide the Game and the items you buy.</li>
-  <li>Consent: personalized ads and tracking. You can withdraw consent at any time.</li>
-  <li>Legitimate interests: bug reports you send, non-personalized ads that keep the Game free, and security.</li>
+  <li>Consent: personalized ads, tracking and, where our consent form applies, measuring our ads with TikTok. You can withdraw consent at any time.</li>
+  <li>Legitimate interests: analytics and crash reports, bug reports you send, non-personalized ads that keep the Game free, measuring our own ad campaigns with Meta, and security.</li>
 </ul>
 <h2><strong>6 - Third-party services</strong></h2>
 <div class="policy-table"><table>
   <thead><tr><th>Service</th><th>Purpose</th><th>Their policy</th></tr></thead>
   <tbody>
     <tr><td>Google AdMob</td><td>Ads (versions with ads)</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+    <tr><td>Google Analytics for Firebase, Firebase Crashlytics</td><td>Analytics and crash reports</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+    <tr><td>Meta Platforms (Meta SDK)</td><td>Measuring our ads on Facebook and Instagram</td><td><a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></td></tr>
+    <tr><td>TikTok (TikTok App Events SDK, Android)</td><td>Measuring our ads on TikTok</td><td><a href="https://www.tiktok.com/legal/page/row/privacy-policy/en">TikTok Privacy Policy</a></td></tr>
     <tr><td>Apple (App Store)</td><td>App distribution, purchases</td><td><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td></tr>
     <tr><td>Google Play</td><td>App distribution, purchases</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
     <tr><td>Telegram</td><td>Private channel where our team reviews bug reports</td><td><a href="https://telegram.org/privacy">Telegram Privacy Policy</a></td></tr>
@@ -81,11 +110,13 @@ For general privacy practices, please refer to the Master Privacy Policy availab
     <tr><td>Bug reports</td><td>Not stored on our server. Kept in the private chat channel for up to 12 months, then deleted</td></tr>
     <tr><td>Server logs with IP addresses</td><td>14 days</td></tr>
     <tr><td>Advertising data</td><td>As set out in Google’s policies</td></tr>
+    <tr><td>Analytics and crash reports (Firebase)</td><td>As set out in Google’s policies and our Firebase settings</td></tr>
+    <tr><td>Advertising measurement data (Meta, TikTok)</td><td>As set out in Meta’s and TikTok’s policies</td></tr>
   </tbody>
 </table></div>
 <h2><strong>8 - User rights</strong></h2>
 <ul>
-  <li><strong>Ads:</strong> change your consent under Privacy settings in the Game’s Settings menu. On iOS, go to Settings › Privacy &amp; Security › Tracking. On Android, reset or delete your advertising ID.</li>
+  <li><strong>Ads:</strong> change your consent under Privacy settings in the Game’s Settings menu. On iOS, go to Settings › Privacy &amp; Security › Tracking. On Android, reset or delete your advertising ID; this also stops Meta and TikTok from linking new events to your old ID. In Facebook or Instagram, you can manage “Your activity off Meta technologies”.</li>
   <li><strong>Game data:</strong> uninstall the Game.</li>
   <li><strong>Bug reports:</strong> to see or delete a report, email legal@coden.org with the game name and the date you sent it. We reply within 30 days.</li>
   <li>Depending on where you live (for example the EEA, the UK or California), you may have the right to access, correct, delete or receive a copy of your data, to object to or restrict its use, and to complain to your data protection authority.</li>
@@ -99,7 +130,7 @@ If you believe a child has sent us information, contact us and we will delete it
 <p>Data sent to our server is encrypted in transit (HTTPS). Only our team can see bug reports.<br />
 While we implement commercially reasonable safeguards, no system can be fully secure.</p>
 <h2><strong>11 - International data transfers</strong></h2>
-<p>Google and the other services above may process data outside your country, including in the United States. Bug reports are forwarded through a server in Vietnam.</p>
+<p>Google, Meta, TikTok and the other services above may process data outside your country, including in the United States. Bug reports are forwarded through a server in Vietnam.</p>
 <h2><strong>12 - Changes to this Addendum</strong></h2>
 <p>We update this Addendum when the Game or the services it uses change, before the version with that change is released.<br />
 The “Last updated” date will be revised to reflect amendments.<br />
